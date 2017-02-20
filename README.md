@@ -8,7 +8,7 @@
 fatal: cannot create directory at 'node_modules/hexo-deployer-git/node_modules/hexo-fs/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/braces/node_modules/expand-range/node_modules/fill-range/node_modules/isobject/node_modules/isarray': Filename too long
 
 ```
-git clone -c core.longpaths=true URL
+git config --global --add core.longpaths true
 ```
 
 # Google搜索验证
