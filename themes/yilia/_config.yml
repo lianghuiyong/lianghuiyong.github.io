@@ -54,7 +54,7 @@ weixin: http://oeqej1j2m.bkt.clouddn.com/weixin.jpg
 
 # Miscellaneous
 baidu_analytics: ''
-google_analytics: ''
+google_analytics: 'UA-86517902-1'
 favicon: /favicon.png
 
 #你的头像url
