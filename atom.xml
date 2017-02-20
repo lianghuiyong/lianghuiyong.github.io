@@ -72,18 +72,14 @@
     <link href="https://lianghuiyong.github.io/2017/02/20/%E6%89%93%E5%8C%85%E5%87%BA%E7%8E%B0%EF%BC%9A-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/"/>
     <id>https://lianghuiyong.github.io/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/</id>
     <published>2017-02-20T02:46:37.000Z</published>
-    <updated>2017-02-20T15:30:35.104Z</updated>
+    <updated>2017-02-20T15:31:34.649Z</updated>
     
-    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=155910&auto=1&height=66"></iframe>
-
-<h1 id="1、build-gradle里添加"><a href="#1、build-gradle里添加" class="headerlink" title="1、build.gradle里添加"></a>1、build.gradle里添加</h1><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">android</span> &#123;</div><div class="line">  <span class="section">dexOptions</span> &#123;</div><div class="line">      <span class="attribute">jumboMode</span> <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h1 id="1、build-gradle里添加"><a href="#1、build-gradle里添加" class="headerlink" title="1、build.gradle里添加"></a>1、build.gradle里添加</h1><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">android</span> &#123;</div><div class="line">  <span class="section">dexOptions</span> &#123;</div><div class="line">      <span class="attribute">jumboMode</span> <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <a id="more"></a>]]></content>
     
     <summary type="html">
     
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=155910&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;1、build-gradle里添加&quot;&gt;&lt;a href=&quot;#1、build-gradle里添加&quot; class=&quot;headerlink&quot; title=&quot;1、build.gradle里添加&quot;&gt;&lt;/a&gt;1、build.gradle里添加&lt;/h1&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;section&quot;&gt;android&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;section&quot;&gt;dexOptions&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;jumboMode&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h1 id=&quot;1、build-gradle里添加&quot;&gt;&lt;a href=&quot;#1、build-gradle里添加&quot; class=&quot;headerlink&quot; title=&quot;1、build.gradle里添加&quot;&gt;&lt;/a&gt;1、build.gradle里添加&lt;/h1&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;section&quot;&gt;android&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;section&quot;&gt;dexOptions&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;jumboMode&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -141,9 +137,9 @@
     </summary>
     
     
-      <category term="Android" scheme="https://lianghuiyong.github.io/tags/Android/"/>
-    
       <category term="JCenter" scheme="https://lianghuiyong.github.io/tags/JCenter/"/>
+    
+      <category term="Android" scheme="https://lianghuiyong.github.io/tags/Android/"/>
     
       <category term="maven仓库" scheme="https://lianghuiyong.github.io/tags/maven%E4%BB%93%E5%BA%93/"/>
     
