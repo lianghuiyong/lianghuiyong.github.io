@@ -1,0 +1,31 @@
+menu:
+  #Archives: /archives
+  #黄金屋: /favourite/index.html
+  #时光机: /favourite/time.html
+  #我是: /aboutme
+  CSDN博客: http://blog.csdn.net/muyang_ren
+rss: /atom.xml
+description: 
+social:
+  weibo: 
+  github: https://github.com/lianghuiyong
+  stack_overflow: 
+  facebook: 
+  twitter:
+  google_plus: 
+
+page_comment: true
+logo: http://oeqej1j2m.bkt.clouddn.com/avatar.jpg
+background:
+  cover: http://oeqej1j2m.bkt.clouddn.com/blog/home_background.jpg
+  color: cover-purple
+
+archive_date_format: MMM DD
+fancybox: true
+
+duoshuo_shortname: lianghuiyong
+
+google_analytics: UA-86517902-1
+baidu_tongji:
+favicon: favicon.png
+
