@@ -26,9 +26,30 @@ plugins:
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="iK62VKwEv6LkAh49k31SAJZdpqWSPsnaXAalp1Ohtn8" />
+  <meta name="baidu-site-verification" content="U4oFD5dyt1" />
 ```
 
-为了Google验证问题，我还把Html验证文件加进了根目录下，然后手动添加roborts.txt文件
+为了Google验证问题，我还把Html验证文件加进了主题目录下source目录，然后手动添加roborts.txt文件
+
+## 百度自动推送
+
+直接添加到主题目录下的layout/post.swig文件下
+```
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+```
 
 # RSS
 安装插件： npm install hexo-generator-feed -save
