@@ -96,7 +96,7 @@ deploy:
 
 ##百度主动推送配置
 baidu_url_submit:
-  count: 1
+  count: 10
   host: https://lianghuiyong.github.io
   token: 86Nyyk3vlpLwPfxV
   path: baidu_urls.txt
