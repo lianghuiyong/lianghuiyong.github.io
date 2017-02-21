@@ -94,7 +94,7 @@ deploy:
   branch: master
 - type: baidu_url_submitter
 
-
+##百度主动推送配置
 baidu_url_submit:
   count: 1
   host: https://lianghuiyong.github.io
