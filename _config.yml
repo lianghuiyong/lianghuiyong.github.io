@@ -89,9 +89,17 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: https://github.com/lianghuiyong/lianghuiyong.github.io.git
   branch: master
+- type: baidu_url_submitter
+
+
+baidu_url_submit:
+  count: 1
+  host: https://lianghuiyong.github.io
+  token: 86Nyyk3vlpLwPfxV
+  path: baidu_urls.txt
 
 jsonContent:
   meta: false
