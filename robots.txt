@@ -10,3 +10,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://lianghuiyong.github.io/sitemap.xml
+Sitemap: https://lianghuiyong.github.io/baidusitemap.xml
