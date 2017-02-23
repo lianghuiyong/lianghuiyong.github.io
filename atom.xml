@@ -59,11 +59,11 @@
     </summary>
     
     
-      <category term="版本管理" scheme="https://lianghuiyong.github.io/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
       <category term="GitHub Pages" scheme="https://lianghuiyong.github.io/tags/GitHub-Pages/"/>
     
       <category term="Hexo" scheme="https://lianghuiyong.github.io/tags/Hexo/"/>
+    
+      <category term="版本管理" scheme="https://lianghuiyong.github.io/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -233,9 +233,9 @@
     </summary>
     
     
-      <category term="Git" scheme="https://lianghuiyong.github.io/tags/Git/"/>
-    
       <category term="版本管理" scheme="https://lianghuiyong.github.io/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="Git" scheme="https://lianghuiyong.github.io/tags/Git/"/>
     
   </entry>
   
