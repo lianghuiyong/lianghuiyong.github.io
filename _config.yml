@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://lianghuiyong.github.io
+url: http://lianghuiyong.online/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -90,14 +90,16 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/lianghuiyong/lianghuiyong.github.io.git
+  repo:
+    github: https://github.com/lianghuiyong/lianghuiyong.github.io.git
+    coding: https://git.coding.net/lianghuiyong/lianghuiyong.git
   branch: master
 - type: baidu_url_submitter
 
 ##百度主动推送配置
 baidu_url_submit:
   count: 10
-  host: https://lianghuiyong.github.io
+  host: http://lianghuiyong.online/
   token: 86Nyyk3vlpLwPfxV
   path: baidu_urls.txt
 
