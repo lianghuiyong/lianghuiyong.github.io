@@ -1,8 +1,10 @@
 ---
-title: OpenResty第一天，CentOS准备
+title: CentOS7 网络设置
 date: 2016-11-05 17:39:12
-tags: [OpenResty]
+tags: [服务器开发]
 ---
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
 
 # 1、使用虚拟机安装CentOS，并使用桥接方式链接网络
 

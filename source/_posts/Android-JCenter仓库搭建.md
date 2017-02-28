@@ -1,7 +1,7 @@
 ---
 title: Android JCenter仓库搭建
 date: 2016-12-21 16:22:23
-tags: [JCenter, Android, maven仓库]
+tags: [JCenter, Android]
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=455502271&auto=0&height=66"></iframe>

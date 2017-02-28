@@ -2,13 +2,18 @@
 title: GitHub使用Hexo搭建博客与版本控制
 tags: [GitHub Pages, Hexo, 版本管理]
 ---
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2001320&auto=0&height=66"></iframe>
+
 ## 一. 本地准备工作
 1、安装Node.js、Git
-<!--more-->
+
 ## 二. 创建github仓库（以以下规则为准）
 1、仓库名：github名.github.io（lianghuiyong.github.io）
 
 2、创建时勾选**Initialize this repository with a README**，会自动创建master分支
+
+<!--more-->
 
 3、创建仓库分支hexo
   1) 本地新建一个文件夹test
