@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lianghuiyong.online/"/>
-  <updated>2017-02-28T11:33:28.077Z</updated>
+  <updated>2017-02-28T11:36:33.603Z</updated>
   <id>http://lianghuiyong.online/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自定义按钮ShapeButton</title>
+    <link href="http://lianghuiyong.online/2017/02/28/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%89%E9%92%AEShapeButton/"/>
+    <id>http://lianghuiyong.online/2017/02/28/自定义按钮ShapeButton/</id>
+    <published>2017-02-28T11:34:35.000Z</published>
+    <updated>2017-02-28T11:36:33.603Z</updated>
+    
+    <content type="html"><![CDATA[<p>开发时，为了一个简单的按钮要写一堆的样式代码，我表示我在写假代码。</p>
+<h1 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h1><p><a href="https://github.com/lianghuiyong/CustomUI" title="Github 地址" target="_blank" rel="external">Github 地址</a></p>
+<h2 id="可定制属性"><a href="#可定制属性" class="headerlink" title="可定制属性"></a>可定制属性</h2><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">app:</span><span class="string">stroke :</span>细线宽度</div><div class="line"><span class="string">app:</span><span class="string">radius :</span>拐角宽度</div><div class="line"><span class="string">app:</span><span class="string">normalColor :</span>按钮颜色</div><div class="line"><span class="string">app:</span><span class="string">pressColor  :</span>按钮选中颜色</div><div class="line"><span class="string">app:</span><span class="string">stroke_normalColor :</span>细线颜色</div><div class="line"><span class="string">app:</span><span class="string">stroke_pressColor :</span>细线选中后的颜色</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><img src="http://o9or3yi8n.bkt.clouddn.com/CustomUI_shape_button.png" alt=""></p>
+<h2 id="示例图代码"><a href="#示例图代码" class="headerlink" title="示例图代码"></a>示例图代码</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;com.better.customui.widget.ShapeButton</div><div class="line">    android:layout_width=<span class="string">"wrap_content"</span></div><div class="line">    android:layout_height=<span class="string">"wrap_content"</span></div><div class="line">    android:text=<span class="string">"123456"</span></div><div class="line">    android:textColor=<span class="string">"#FF44FF"</span></div><div class="line">    <span class="keyword">app</span>:pressColor=<span class="string">"#2F000000"</span></div><div class="line">    <span class="keyword">app</span>:radius=<span class="string">"3dip"</span></div><div class="line">    <span class="keyword">app</span>:stroke=<span class="string">"0.5dip"</span></div><div class="line">    <span class="keyword">app</span>:stroke_normalColor=<span class="string">"#553355"</span></div><div class="line">    <span class="keyword">app</span>:stroke_pressColor=<span class="string">"#8F553355"</span> /&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;com<span class="selector-class">.better</span><span class="selector-class">.customui</span><span class="selector-class">.widget</span><span class="selector-class">.ShapeButton</span></div><div class="line">    android:layout_width=<span class="string">"wrap_content"</span></div><div class="line">    android:layout_height=<span class="string">"wrap_content"</span></div><div class="line">    android:text=<span class="string">"123456"</span></div><div class="line">    android:textColor=<span class="string">"#FF44FF"</span></div><div class="line">    app:normalColor=<span class="string">"#FF3988D2"</span></div><div class="line">    app:pressColor=<span class="string">"#9F3988D2"</span></div><div class="line">    app:radius=<span class="string">"3dp"</span> /&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开发时，为了一个简单的按钮要写一堆的样式代码，我表示我在写假代码。&lt;/p&gt;
+&lt;h1 id=&quot;地址&quot;&gt;&lt;a href=&quot;#地址&quot; class=&quot;headerlink&quot; title=&quot;地址&quot;&gt;&lt;/a&gt;地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lianghuiyong/CustomUI&quot; title=&quot;Github 地址&quot;&gt;Github 地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;可定制属性&quot;&gt;&lt;a href=&quot;#可定制属性&quot; class=&quot;headerlink&quot; title=&quot;可定制属性&quot;&gt;&lt;/a&gt;可定制属性&lt;/h2&gt;&lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;stroke :&lt;/span&gt;细线宽度&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;radius :&lt;/span&gt;拐角宽度&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;normalColor :&lt;/span&gt;按钮颜色&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;pressColor  :&lt;/span&gt;按钮选中颜色&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;stroke_normalColor :&lt;/span&gt;细线颜色&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;app:&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;stroke_pressColor :&lt;/span&gt;细线选中后的颜色&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Android 自定义UI" scheme="http://lianghuiyong.online/tags/Android-%E8%87%AA%E5%AE%9A%E4%B9%89UI/"/>
+    
+  </entry>
   
   <entry>
     <title>通过系统通讯录获取联系人号码</title>
