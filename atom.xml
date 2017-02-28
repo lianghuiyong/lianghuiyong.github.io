@@ -81,11 +81,12 @@
     <link href="http://lianghuiyong.online/2017/02/20/Github%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     <id>http://lianghuiyong.online/2017/02/20/Github使用hexo搭建博客与版本控制/</id>
     <published>2017-02-20T15:16:30.205Z</published>
-    <updated>2017-02-20T15:16:30.224Z</updated>
+    <updated>2017-02-28T12:21:48.838Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一-本地准备工作"><a href="#一-本地准备工作" class="headerlink" title="一. 本地准备工作"></a>一. 本地准备工作</h2><p>1、安装Node.js、Git<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<h2 id="一-本地准备工作"><a href="#一-本地准备工作" class="headerlink" title="一. 本地准备工作"></a>一. 本地准备工作</h2><p>1、安装Node.js、Git</p>
 <h2 id="二-创建github仓库（以以下规则为准）"><a href="#二-创建github仓库（以以下规则为准）" class="headerlink" title="二. 创建github仓库（以以下规则为准）"></a>二. 创建github仓库（以以下规则为准）</h2><p>1、仓库名：github名.github.io（lianghuiyong.github.io）</p>
 <p>2、创建时勾选<strong>Initialize this repository with a README</strong>，会自动创建master分支</p>
+<a id="more"></a>
 <p>3、创建仓库分支hexo<br>  1) 本地新建一个文件夹test<br>  2) test文件夹里鼠标右键选择Git bash，输入以下指令：<br>  <figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add <span class="built_in">origin</span> https://github.com/github名/github名.github.io.git</div><div class="line">git pull <span class="built_in">origin</span> master</div><div class="line">git branch hexo</div><div class="line">git checkout hexo</div><div class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> hexo</div></pre></td></tr></table></figure></p>
 <p><a href="https://lianghuiyong.gitbooks.io/git-note/content/chapter1.html" title="查看git常用命令" target="_blank" rel="external">git常用命令</a><br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">分支<span class="literal">master</span>（展示网页的分支必须是<span class="literal">master</span>），用于放hexo生成的静态网站文件。</div><div class="line">分支hexo（这个可以随意取），用于存储hexo文件。</div></pre></td></tr></table></figure></p>
 <h2 id="三-第一次初始化hexo项目（不是从自己的github仓库下载过来的hexo工程文件）"><a href="#三-第一次初始化hexo项目（不是从自己的github仓库下载过来的hexo工程文件）" class="headerlink" title="三. 第一次初始化hexo项目（不是从自己的github仓库下载过来的hexo工程文件）"></a>三. 第一次初始化hexo项目（不是从自己的github仓库下载过来的hexo工程文件）</h2><p><strong>注：本地电脑要与github通过验证，git提交协议有ssh，HTTPS等验证方式，我用的HTTPS。</strong></p>
@@ -115,7 +116,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;一-本地准备工作&quot;&gt;&lt;a href=&quot;#一-本地准备工作&quot; class=&quot;headerlink&quot; title=&quot;一. 本地准备工作&quot;&gt;&lt;/a&gt;一. 本地准备工作&lt;/h2&gt;&lt;p&gt;1、安装Node.js、Git&lt;br&gt;
+      &lt;h2 id=&quot;一-本地准备工作&quot;&gt;&lt;a href=&quot;#一-本地准备工作&quot; class=&quot;headerlink&quot; title=&quot;一. 本地准备工作&quot;&gt;&lt;/a&gt;一. 本地准备工作&lt;/h2&gt;&lt;p&gt;1、安装Node.js、Git&lt;/p&gt;
+&lt;h2 id=&quot;二-创建github仓库（以以下规则为准）&quot;&gt;&lt;a href=&quot;#二-创建github仓库（以以下规则为准）&quot; class=&quot;headerlink&quot; title=&quot;二. 创建github仓库（以以下规则为准）&quot;&gt;&lt;/a&gt;二. 创建github仓库（以以下规则为准）&lt;/h2&gt;&lt;p&gt;1、仓库名：github名.github.io（lianghuiyong.github.io）&lt;/p&gt;
+&lt;p&gt;2、创建时勾选&lt;strong&gt;Initialize this repository with a README&lt;/strong&gt;，会自动创建master分支&lt;/p&gt;
     
     </summary>
     

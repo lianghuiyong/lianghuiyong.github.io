@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lianghuiyong.online/2017/02/20/Github%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
+    
+    <lastmod>2017-02-28T12:21:48.838Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lianghuiyong.online/2016/11/05/CentOS7%20%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</loc>
     
     <lastmod>2017-02-28T12:20:06.741Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://lianghuiyong.online/2017/02/20/%E6%89%93%E5%8C%85%E5%87%BA%E7%8E%B0%EF%BC%9A-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/</loc>
     
     <lastmod>2017-02-20T15:44:27.927Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lianghuiyong.online/2017/02/20/Github%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
-    
-    <lastmod>2017-02-20T15:16:30.224Z</lastmod>
     
   </url>
   
