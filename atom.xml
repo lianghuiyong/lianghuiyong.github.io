@@ -219,7 +219,7 @@
     <link href="http://lianghuiyong.online/2016/12/16/5-0%E4%BE%A7%E6%A0%8F%E9%A1%B6%E9%83%A8%E9%80%8F%E6%98%8E%EF%BC%8C%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%95%88%E6%9E%9C%E3%80%82/"/>
     <id>http://lianghuiyong.online/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/</id>
     <published>2016-12-16T02:19:52.000Z</published>
-    <updated>2017-02-20T15:16:30.205Z</updated>
+    <updated>2017-02-28T12:03:41.396Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一-主题"><a href="#一-主题" class="headerlink" title="一. 主题"></a>一. 主题</h2><p>1、基本主题<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"Base.AppTheme"</span> <span class="attr">parent</span>=<span class="string">"Theme.AppCompat.Light.NoActionBar"</span>&gt;</span><span class="xml"></span></div><div class="line">    <span class="comment">&lt;!--text style--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:textColor"</span>&gt;</span>@color/textColor<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"colorAccent"</span>&gt;</span>@color/colorAccent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowAnimationStyle"</span>&gt;</span>@style/AnimationActivity<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
@@ -237,8 +237,6 @@
     
     
       <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
-    
-      <category term="侧栏" scheme="http://lianghuiyong.online/tags/%E4%BE%A7%E6%A0%8F/"/>
     
   </entry>
   
