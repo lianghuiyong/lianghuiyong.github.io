@@ -206,9 +206,9 @@
     </summary>
     
     
-      <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
-    
       <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
+    
+      <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
     
   </entry>
   
@@ -243,9 +243,11 @@
     <link href="http://lianghuiyong.online/2016/11/05/CentOS7%20%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/"/>
     <id>http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/</id>
     <published>2016-11-05T09:39:12.000Z</published>
-    <updated>2017-02-28T12:19:24.873Z</updated>
+    <updated>2017-02-28T12:20:06.741Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"><a href="#1、使用虚拟机安装CentOS，并使用桥接方式链接网络" class="headerlink" title="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"></a>1、使用虚拟机安装CentOS，并使用桥接方式链接网络</h1><h1 id="2、编辑网络配置"><a href="#2、编辑网络配置" class="headerlink" title="2、编辑网络配置"></a>2、编辑网络配置</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></div><div class="line">vi ifcfg-eno16777736</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
+
+<h1 id="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"><a href="#1、使用虚拟机安装CentOS，并使用桥接方式链接网络" class="headerlink" title="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"></a>1、使用虚拟机安装CentOS，并使用桥接方式链接网络</h1><h1 id="2、编辑网络配置"><a href="#2、编辑网络配置" class="headerlink" title="2、编辑网络配置"></a>2、编辑网络配置</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></div><div class="line">vi ifcfg-eno16777736</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p><strong>更改</strong><br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">BOOTPROTO</span>=DHCP -&gt; BOOTPROTO=static</div><div class="line"><span class="attr">ONBOOT</span>=<span class="literal">no</span> -&gt; <span class="literal">ON</span>BOOT=<span class="literal">yes</span></div></pre></td></tr></table></figure></p>
 <p><strong>增加</strong></p>
@@ -257,7 +259,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot;&gt;&lt;a href=&quot;#1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot; class=&quot;headerlink&quot; title=&quot;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot;&gt;&lt;/a&gt;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&lt;/h1&gt;&lt;h1 id=&quot;2、编辑网络配置&quot;&gt;&lt;a href=&quot;#2、编辑网络配置&quot; class=&quot;headerlink&quot; title=&quot;2、编辑网络配置&quot;&gt;&lt;/a&gt;2、编辑网络配置&lt;/h1&gt;&lt;figure class=&quot;highlight awk&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;cd &lt;span class=&quot;regexp&quot;&gt;/etc/&lt;/span&gt;sysconfig&lt;span class=&quot;regexp&quot;&gt;/network-scripts/&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;vi ifcfg-eno16777736&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=28406526&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot;&gt;&lt;a href=&quot;#1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot; class=&quot;headerlink&quot; title=&quot;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&quot;&gt;&lt;/a&gt;1、使用虚拟机安装CentOS，并使用桥接方式链接网络&lt;/h1&gt;&lt;h1 id=&quot;2、编辑网络配置&quot;&gt;&lt;a href=&quot;#2、编辑网络配置&quot; class=&quot;headerlink&quot; title=&quot;2、编辑网络配置&quot;&gt;&lt;/a&gt;2、编辑网络配置&lt;/h1&gt;&lt;figure class=&quot;highlight awk&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;cd &lt;span class=&quot;regexp&quot;&gt;/etc/&lt;/span&gt;sysconfig&lt;span class=&quot;regexp&quot;&gt;/network-scripts/&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;vi ifcfg-eno16777736&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
