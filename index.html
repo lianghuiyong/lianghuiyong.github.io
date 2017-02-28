@@ -211,11 +211,12 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
 
 <h2 id="1、点击跳转到通讯录界面"><a href="#1、点击跳转到通讯录界面" class="headerlink" title="1、点击跳转到通讯录界面"></a>1、点击跳转到通讯录界面</h2><figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Uri uri = Uri.parse(<span class="string">"content://contacts/people"</span>);</div><div class="line"><span class="keyword">Intent</span> <span class="keyword">intent</span> = new <span class="keyword">Intent</span>(<span class="keyword">Intent</span>.ACTION_PICK, uri);</div><div class="line">startActivityForResult(<span class="keyword">intent</span>, <span class="number">0</span>);</div></pre></td></tr></table></figure>
-<h2 id="2、获取通讯录姓名和手机号码"><a href="#2、获取通讯录姓名和手机号码" class="headerlink" title="2、获取通讯录姓名和手机号码"></a>2、获取通讯录姓名和手机号码</h2><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line"><span class="keyword">protected</span> <span class="keyword">void</span> onActivityResult(<span class="built_in">int</span> requestCode, <span class="built_in">int</span> resultCode, Intent data) &#123;</div><div class="line">    <span class="keyword">switch</span> (requestCode) &#123;</div><div class="line">        <span class="keyword">case</span> <span class="number">0</span>:</div><div class="line">            <span class="keyword">if</span> (data == <span class="keyword">null</span>) &#123;</div><div class="line">                <span class="keyword">return</span>;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="comment">//处理返回的data,获取选择的联系人信息</span></div><div class="line">            Uri uri = data.getData();</div><div class="line">            <span class="keyword">String</span>[] contacts = getPhoneContacts(uri);</div><div class="line">            photoNo.setText(contacts[<span class="number">1</span>]);</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">private</span> <span class="keyword">String</span>[] getPhoneContacts(Uri uri) &#123;</div><div class="line">    <span class="keyword">String</span>[] contact = <span class="keyword">new</span> <span class="keyword">String</span>[<span class="number">2</span>]; <span class="comment">//得到ContentResolver对象</span></div><div class="line">    ContentResolver cr = getContentResolver(); <span class="comment">//取得电话本中开始一项的光标</span></div><div class="line">    Cursor <span class="built_in">cursor</span> = cr.query(uri, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>);</div><div class="line">    <span class="keyword">if</span> (<span class="built_in">cursor</span> != <span class="keyword">null</span>) &#123;</div><div class="line">        <span class="built_in">cursor</span>.moveToFirst(); <span class="comment">//取得联系人姓名</span></div><div class="line">        <span class="built_in">int</span> nameFieldColumnIndex = <span class="built_in">cursor</span>.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);</div><div class="line">        contact[<span class="number">0</span>] = <span class="built_in">cursor</span>.getString(nameFieldColumnIndex); <span class="comment">//取得电话号码</span></div><div class="line">        <span class="keyword">String</span> ContactId = <span class="built_in">cursor</span>.getString(<span class="built_in">cursor</span>.getColumnIndex(ContactsContract.Contacts._ID));</div><div class="line">        Cursor phone = cr.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, <span class="keyword">null</span>, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + <span class="string">"="</span> + ContactId, <span class="keyword">null</span>, <span class="keyword">null</span>);</div><div class="line">        <span class="keyword">if</span> (phone != <span class="keyword">null</span>) &#123;</div><div class="line">            phone.moveToFirst();</div><div class="line">            contact[<span class="number">1</span>] = phone.getString(phone.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));</div><div class="line">        &#125;</div><div class="line">        phone.close();</div><div class="line">        <span class="built_in">cursor</span>.close();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> contact;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="3、权限"><a href="#3、权限" class="headerlink" title="3、权限"></a>3、权限</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.READ_CONTACTS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.READ_PHONE_STATE"</span> /&gt;</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/02/28/通过系统通讯录获取联系人号码/#more">more >></a>
+        
       
 
       
@@ -292,15 +293,15 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">GitHub Pages</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
         		</li>
       		
 		</ul>
@@ -640,11 +641,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
@@ -769,11 +770,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">版本管理</a>
+                <a href="javascript:void(0)" class="js-tag color3">maven仓库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -785,15 +786,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">版本管理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">OpenResty</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">maven仓库</a>
               </li>
             
             <div class="clearfix"></div>
