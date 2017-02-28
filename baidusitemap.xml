@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://lianghuiyong.online/2016/12/21/Android-JCenter%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-02-28T12:15:03.390Z</lastmod>
+    <data>
+        <display>
+        <title>Android JCenter仓库搭建</title>
+        <pubTime>2016-12-21T08:22:23.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>JCenter</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lianghuiyong.online/2016/12/16/5-0%E4%BE%A7%E6%A0%8F%E9%A1%B6%E9%83%A8%E9%80%8F%E6%98%8E%EF%BC%8C%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%95%88%E6%9E%9C%E3%80%82/</loc>
     <lastmod>2017-02-28T12:03:41.396Z</lastmod>
     <data>
@@ -55,27 +74,6 @@
 
     
     
-    
-  <url>
-    <loc>http://lianghuiyong.online/2016/12/21/Android-JCenter%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2017-02-20T16:23:24.416Z</lastmod>
-    <data>
-        <display>
-        <title>Android JCenter仓库搭建</title>
-        <pubTime>2016-12-21T08:22:23.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>JCenter</tag>
-         
-        <tag>maven仓库</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://lianghuiyong.online/2017/02/20/%E6%89%93%E5%8C%85%E5%87%BA%E7%8E%B0%EF%BC%9A-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/</loc>
