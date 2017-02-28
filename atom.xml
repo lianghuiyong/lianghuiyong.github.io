@@ -206,9 +206,9 @@
     </summary>
     
     
-      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
-    
       <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
     
   </entry>
   
@@ -239,11 +239,11 @@
   </entry>
   
   <entry>
-    <title>OpenResty第一天，CentOS准备</title>
-    <link href="http://lianghuiyong.online/2016/11/05/OpenResty%E7%AC%AC%E4%B8%80%E5%A4%A9%EF%BC%8CCentOS%E5%87%86%E5%A4%87/"/>
-    <id>http://lianghuiyong.online/2016/11/05/OpenResty第一天，CentOS准备/</id>
+    <title>CentOS7 网络设置</title>
+    <link href="http://lianghuiyong.online/2016/11/05/CentOS7%20%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/</id>
     <published>2016-11-05T09:39:12.000Z</published>
-    <updated>2017-02-20T15:16:30.225Z</updated>
+    <updated>2017-02-28T12:19:24.873Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"><a href="#1、使用虚拟机安装CentOS，并使用桥接方式链接网络" class="headerlink" title="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"></a>1、使用虚拟机安装CentOS，并使用桥接方式链接网络</h1><h1 id="2、编辑网络配置"><a href="#2、编辑网络配置" class="headerlink" title="2、编辑网络配置"></a>2、编辑网络配置</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></div><div class="line">vi ifcfg-eno16777736</div></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -262,7 +262,7 @@
     </summary>
     
     
-      <category term="OpenResty" scheme="http://lianghuiyong.online/tags/OpenResty/"/>
+      <category term="服务器开发" scheme="http://lianghuiyong.online/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   

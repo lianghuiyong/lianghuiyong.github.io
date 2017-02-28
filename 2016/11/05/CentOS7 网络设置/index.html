@@ -8,17 +8,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lianghuiyong.online">
-  <title>Tag: Git | 梁惠涌の博客</title>
+  <title>CentOS7 网络设置 | 梁惠涌の博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="谷歌粉，一只爱折腾的小猿猴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梁惠涌の博客">
-<meta property="og:url" content="http://lianghuiyong.online/tags/Git/index.html">
+  <meta name="description" content="1、使用虚拟机安装CentOS，并使用桥接方式链接网络2、编辑网络配置12cd /etc/sysconfig/network-scripts/vi ifcfg-eno16777736">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS7 网络设置">
+<meta property="og:url" content="http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/index.html">
 <meta property="og:site_name" content="梁惠涌の博客">
-<meta property="og:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta property="og:description" content="1、使用虚拟机安装CentOS，并使用桥接方式链接网络2、编辑网络配置12cd /etc/sysconfig/network-scripts/vi ifcfg-eno16777736">
+<meta property="og:updated_time" content="2017-02-28T12:19:24.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梁惠涌の博客">
-<meta name="twitter:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta name="twitter:title" content="CentOS7 网络设置">
+<meta name="twitter:description" content="1、使用虚拟机安装CentOS，并使用桥接方式链接网络2、编辑网络配置12cd /etc/sysconfig/network-scripts/vi ifcfg-eno16777736">
   
     <link rel="alternative" href="/atom.xml" title="梁惠涌の博客" type="application/atom+xml">
   
@@ -189,65 +190,210 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CentOS7 网络设置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/10/29/Git使用笔录/" class="archive-article-date">
-  	<time datetime="2016-10-29T05:09:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/29/Git使用笔录/">Git使用笔录</a>
+    <h1 class="article-title" itemprop="name">
+      CentOS7 网络设置
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/11/05/CentOS7 网络设置/" class="archive-article-date">
+  	<time datetime="2016-11-05T09:39:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"><a href="#1、使用虚拟机安装CentOS，并使用桥接方式链接网络" class="headerlink" title="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"></a>1、使用虚拟机安装CentOS，并使用桥接方式链接网络</h1><h1 id="2、编辑网络配置"><a href="#2、编辑网络配置" class="headerlink" title="2、编辑网络配置"></a>2、编辑网络配置</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></div><div class="line">vi ifcfg-eno16777736</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>更改</strong><br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">BOOTPROTO</span>=DHCP -&gt; BOOTPROTO=static</div><div class="line"><span class="attr">ONBOOT</span>=<span class="literal">no</span> -&gt; <span class="literal">ON</span>BOOT=<span class="literal">yes</span></div></pre></td></tr></table></figure></p>
+<p><strong>增加</strong></p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="attr">HWADDR</span>=aa:bb:cc:dd:ee;ff //虚拟机的mac地址,在虚拟机的设置-网络中可以查看</div><div class="line"><span class="attr">GATEWAY</span>=<span class="number">192.168</span>.<span class="number">0.1</span> //网关，需要和主机一致</div><div class="line"><span class="attr">IPADDR</span>=<span class="number">192.168</span>.<span class="number">0.222</span> //虚拟机的ip,保持和主机一个网段</div><div class="line"><span class="attr">NETMASK</span>=<span class="number">255.255</span>.<span class="number">255.0</span> //子网掩码</div><div class="line"><span class="attr">DNS1</span>=<span class="number">8.8</span>.<span class="number">8.8</span> //DNS</div><div class="line"><span class="attr">DNS2</span>=<span class="number">114.114</span>.<span class="number">114.114</span> //DNS</div></pre></td></tr></table></figure>
+<p>1、重启网络服务：service network restart<br>2、试下：ping www.baidu.com</p>
+<h1 id="3、安装网络工具"><a href="#3、安装网络工具" class="headerlink" title="3、安装网络工具"></a>3、安装网络工具</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="keyword">install</span> net-tools</div></pre></td></tr></table></figure>
+<h1 id="4、安装SSH"><a href="#4、安装SSH" class="headerlink" title="4、安装SSH"></a>4、安装SSH</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="keyword">install</span> openssh-<span class="keyword">server</span> -y</div></pre></td></tr></table></figure>
+<h1 id="5、结语"><a href="#5、结语" class="headerlink" title="5、结语"></a>5、结语</h1><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">本以为后面会以后端开发继续往前写的，后面发现其实自己工作重心和目前对自己开发有利的方向还是前端，</div><div class="line">恰巧这几天微信小程序可以开发，转而学习微信小程序了。后端是另一个开始，话说我也是Go的追逐者。</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://oeqej1j2m.bkt.clouddn.com/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://oeqej1j2m.bkt.clouddn.com/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          5.0侧栏顶部透明，仿网易云音乐效果。
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/10/29/Git使用笔录/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git使用笔录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="CentOS7 网络设置" data-title="CentOS7 网络设置" data-url="http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
 
+
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
           </div>
         </div>
@@ -269,9 +415,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

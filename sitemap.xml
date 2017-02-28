@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lianghuiyong.online/2016/11/05/CentOS7%20%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</loc>
+    
+    <lastmod>2017-02-28T12:19:24.873Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lianghuiyong.online/2016/12/21/Android-JCenter%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2017-02-28T12:15:03.390Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://lianghuiyong.online/2017/02/20/%E6%89%93%E5%8C%85%E5%87%BA%E7%8E%B0%EF%BC%9A-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/</loc>
     
     <lastmod>2017-02-20T15:44:27.927Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lianghuiyong.online/2016/11/05/OpenResty%E7%AC%AC%E4%B8%80%E5%A4%A9%EF%BC%8CCentOS%E5%87%86%E5%A4%87/</loc>
-    
-    <lastmod>2017-02-20T15:16:30.225Z</lastmod>
     
   </url>
   

@@ -4,5 +4,5 @@ http://lianghuiyong.online/2017/02/20/Github使用hexo搭建博客与版本控�
 http://lianghuiyong.online/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/
 http://lianghuiyong.online/2016/12/21/Android-JCenter仓库搭建/
 http://lianghuiyong.online/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/
-http://lianghuiyong.online/2016/11/05/OpenResty第一天，CentOS准备/
+http://lianghuiyong.online/2016/11/05/CentOS7 网络设置/
 http://lianghuiyong.online/2016/10/29/Git使用笔录/
