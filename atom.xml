@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lianghuiyong.online/"/>
-  <updated>2017-03-01T14:02:46.987Z</updated>
+  <updated>2017-03-01T14:04:13.449Z</updated>
   <id>http://lianghuiyong.online/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://lianghuiyong.online/2017/03/01/Go%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://lianghuiyong.online/2017/03/01/Go环境搭建/</id>
     <published>2017-03-01T13:51:01.000Z</published>
-    <updated>2017-03-01T14:02:46.987Z</updated>
+    <updated>2017-03-01T14:04:13.449Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2001320&auto=0&height=66"></iframe>
 
-<h2 id="1、将go-sdk解压到-root-sdk文件夹"><a href="#1、将go-sdk解压到-root-sdk文件夹" class="headerlink" title="1、将go sdk解压到 \/root\/sdk文件夹"></a>1、将go sdk解压到 \/root\/sdk文件夹</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># tar -xzf go1.7.linux-amd64.tar.gz -C /root/sdk</span></div></pre></td></tr></table></figure>
+<h2 id="1、将go-sdk解压到-root-sdk文件夹"><a href="#1、将go-sdk解压到-root-sdk文件夹" class="headerlink" title="1、将go sdk解压到 /root/sdk文件夹"></a>1、将go sdk解压到 /root/sdk文件夹</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># tar -xzf go1.7.linux-amd64.tar.gz -C /root/sdk</span></div></pre></td></tr></table></figure>
 <h2 id="2、-bashrc-添加path"><a href="#2、-bashrc-添加path" class="headerlink" title="2、.bashrc 添加path"></a>2、.bashrc 添加path</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> GOROOT=/root/sdk/go</div><div class="line"><span class="built_in">export</span> GOPATH=<span class="variable">$GOROOT</span>/lib</div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOROOT</span>/bin</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="3、使path生效"><a href="#3、使path生效" class="headerlink" title="3、使path生效"></a>3、使path生效</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># source .bashrc</span></div></pre></td></tr></table></figure>
@@ -35,7 +35,7 @@
     
       &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=2001320&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&quot;1、将go-sdk解压到-root-sdk文件夹&quot;&gt;&lt;a href=&quot;#1、将go-sdk解压到-root-sdk文件夹&quot; class=&quot;headerlink&quot; title=&quot;1、将go sdk解压到 \/root\/sdk文件夹&quot;&gt;&lt;/a&gt;1、将go sdk解压到 \/root\/sdk文件夹&lt;/h2&gt;&lt;figure class=&quot;highlight vala&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# tar -xzf go1.7.linux-amd64.tar.gz -C /root/sdk&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;1、将go-sdk解压到-root-sdk文件夹&quot;&gt;&lt;a href=&quot;#1、将go-sdk解压到-root-sdk文件夹&quot; class=&quot;headerlink&quot; title=&quot;1、将go sdk解压到 /root/sdk文件夹&quot;&gt;&lt;/a&gt;1、将go sdk解压到 /root/sdk文件夹&lt;/h2&gt;&lt;figure class=&quot;highlight vala&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# tar -xzf go1.7.linux-amd64.tar.gz -C /root/sdk&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;2、-bashrc-添加path&quot;&gt;&lt;a href=&quot;#2、-bashrc-添加path&quot; class=&quot;headerlink&quot; title=&quot;2、.bashrc 添加path&quot;&gt;&lt;/a&gt;2、.bashrc 添加path&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; GOROOT=/root/sdk/go&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; GOPATH=&lt;span class=&quot;variable&quot;&gt;$GOROOT&lt;/span&gt;/lib&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; PATH=&lt;span class=&quot;variable&quot;&gt;$PATH&lt;/span&gt;:&lt;span class=&quot;variable&quot;&gt;$GOROOT&lt;/span&gt;/bin&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
