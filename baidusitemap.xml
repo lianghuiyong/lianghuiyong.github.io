@@ -4,6 +4,42 @@
 
     
   <url>
+    <loc>http://lianghuiyong.online/2017/03/01/Go%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-03-01T14:02:46.987Z</lastmod>
+    <data>
+        <display>
+        <title>Go环境搭建</title>
+        <pubTime>2017-03-01T13:51:01.000Z</pubTime>
+        
+        <tag>服务器开发</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lianghuiyong.online/2016/10/29/Git%E4%BD%BF%E7%94%A8%E7%AC%94%E5%BD%95/</loc>
+    <lastmod>2017-03-01T14:02:46.846Z</lastmod>
+    <data>
+        <display>
+        <title>Git使用笔录</title>
+        <pubTime>2016-10-29T05:09:43.000Z</pubTime>
+        
+        <tag>版本管理</tag>
+         
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lianghuiyong.online/2017/02/20/Github%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
     <lastmod>2017-02-28T12:23:57.039Z</lastmod>
     <data>
@@ -122,25 +158,6 @@
         <pubTime>2017-02-20T02:46:37.000Z</pubTime>
         
         <tag>Android</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lianghuiyong.online/2016/10/29/Git%E4%BD%BF%E7%94%A8%E7%AC%94%E5%BD%95/</loc>
-    <lastmod>2017-02-20T15:16:30.224Z</lastmod>
-    <data>
-        <display>
-        <title>Git使用笔录</title>
-        <pubTime>2016-10-29T05:09:43.000Z</pubTime>
-        
-        <tag>版本管理</tag>
-         
-        <tag>Git</tag>
          
          
            
