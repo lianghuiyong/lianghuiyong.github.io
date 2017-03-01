@@ -11,7 +11,9 @@ tags: [Git, 版本管理]
    git config --global user.name "Your name"
    git config --global user.email "Your email"
 ```
+
 <!--more-->
+
 # 1、git本地仓库初始化
 
 ```
