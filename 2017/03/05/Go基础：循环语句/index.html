@@ -8,17 +8,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lianghuiyong.online">
-  <title>梁惠涌の博客</title>
+  <title>Go基础：循环语句 | 梁惠涌の博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="谷歌粉，一只爱折腾的小猿猴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梁惠涌の博客">
-<meta property="og:url" content="http://lianghuiyong.online/index.html">
+  <meta name="description" content="运行环境：go version go1.8 windows/amd64
+编辑器JetBrains Gogland
+Go 官方test代码$GOPATH$\test">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Go基础：循环语句">
+<meta property="og:url" content="http://lianghuiyong.online/2017/03/05/Go基础：循环语句/index.html">
 <meta property="og:site_name" content="梁惠涌の博客">
-<meta property="og:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta property="og:description" content="运行环境：go version go1.8 windows/amd64
+编辑器JetBrains Gogland
+Go 官方test代码$GOPATH$\test">
+<meta property="og:updated_time" content="2017-03-05T15:06:22.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梁惠涌の博客">
-<meta name="twitter:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta name="twitter:title" content="Go基础：循环语句">
+<meta name="twitter:description" content="运行环境：go version go1.8 windows/amd64
+编辑器JetBrains Gogland
+Go 官方test代码$GOPATH$\test">
   
     <link rel="alternative" href="/atom.xml" title="梁惠涌の博客" type="application/atom+xml">
   
@@ -189,16 +196,14 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Go基础：循环语句" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Go基础：循环语句" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/Go基础：循环语句/">Go基础：循环语句</a>
+    <h1 class="article-title" itemprop="name">
+      Go基础：循环语句
     </h1>
   
 
@@ -211,85 +216,36 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=211015&auto=0&height=66"></iframe></p>
+        <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=211015&auto=0&height=66"></iframe></p>
 <h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
 </code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
 </code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
-</code></pre>
-        
-          <a class="article-more-a" href="/2017/03/05/Go基础：循环语句/#more">more >></a>
-        
+</code></pre><a id="more"></a>
+<h2 id="练习代码"><a href="#练习代码" class="headerlink" title="练习代码"></a>练习代码</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> main</div><div class="line"></div><div class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"--------------------test_for--------------------"</span>)</div><div class="line">	test_for()</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"--------------------test_if--------------------"</span>)</div><div class="line">	test_if()</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"--------------------test_switch--------------------"</span>)</div><div class="line">	test_switch()</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"--------------------test_defer--------------------"</span>)</div><div class="line">	test_defer()</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">test_for</span><span class="params">()</span></span> &#123;</div><div class="line">	sum := <span class="number">0</span></div><div class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i ++ &#123;</div><div class="line">		sum += i</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"sum:"</span>, sum) <span class="comment">// sum: 45</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">test_if</span><span class="params">()</span></span> &#123;</div><div class="line"></div><div class="line">	<span class="comment">//表达式无需小括号</span></div><div class="line">	<span class="keyword">if</span> <span class="literal">true</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if"</span>)</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if"</span>)</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">//表达式可执行一部分简单的语句（赋值、函数等）</span></div><div class="line">	<span class="keyword">if</span> one := <span class="number">1</span>; <span class="literal">true</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if "</span>, one, <span class="string">" teue"</span>)</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if"</span>)</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">//简单的调用</span></div><div class="line">	<span class="keyword">if</span> test_for(); <span class="literal">false</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if "</span>, <span class="string">"test_for"</span>)</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		fmt.Println(<span class="string">"is test if"</span>)</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">test_switch</span><span class="params">()</span></span> &#123;</div><div class="line"></div><div class="line">	<span class="comment">//同样可执行简单语句，而且case可为bool值！</span></div><div class="line">	<span class="keyword">switch</span> i5 := <span class="number">5</span>; <span class="literal">true</span> &#123;</div><div class="line">	<span class="keyword">case</span> i5 &gt; <span class="number">5</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 &gt; 5"</span>)</div><div class="line">	<span class="keyword">case</span> i5 == <span class="number">5</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 == 5"</span>)</div><div class="line">	<span class="keyword">case</span> i5 &lt; <span class="number">5</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 &lt; 5"</span>)</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	i5 := <span class="number">5</span></div><div class="line">	<span class="keyword">switch</span>  i5 &#123;</div><div class="line">	<span class="keyword">case</span> <span class="number">0</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 0"</span>)</div><div class="line">	<span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 1"</span>)</div><div class="line">	<span class="keyword">case</span> <span class="number">2</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 2"</span>)</div><div class="line">	<span class="keyword">case</span> <span class="number">3</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 3"</span>)</div><div class="line">	<span class="keyword">case</span> <span class="number">4</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 4"</span>)</div><div class="line">	<span class="keyword">case</span> <span class="number">5</span>:</div><div class="line">		fmt.Println(<span class="string">"i5 is 5"</span>)</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//defer会将函数进行入栈，当包含defer的函数返回时，被入栈的函数将一一出栈。</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">test_defer</span><span class="params">()</span></span>  &#123;</div><div class="line"></div><div class="line">	test_defer_hello()</div><div class="line"></div><div class="line">	fmt.Println(<span class="string">"counting"</span>)</div><div class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</div><div class="line">		<span class="keyword">defer</span> fmt.Println(i)</div><div class="line">	&#125;</div><div class="line">	fmt.Println(<span class="string">"done"</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">test_defer_hello</span><span class="params">()</span></span> &#123;</div><div class="line">	<span class="keyword">defer</span> fmt.Println(<span class="string">"world"</span>)</div><div class="line">	fmt.Println(<span class="string">"hello"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="输出部分"><a href="#输出部分" class="headerlink" title="输出部分"></a>输出部分</h2><figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">--------------------test_for--------------------</span></div><div class="line">sum: <span class="number">45</span></div><div class="line"><span class="comment">--------------------test_if--------------------</span></div><div class="line"><span class="keyword">is</span> test <span class="keyword">if</span></div><div class="line"><span class="keyword">is</span> test <span class="keyword">if</span>  <span class="number">1</span>  teue</div><div class="line">sum: <span class="number">45</span></div><div class="line"><span class="keyword">is</span> test <span class="keyword">if</span></div><div class="line"><span class="comment">--------------------test_switch--------------------</span></div><div class="line">i5 == <span class="number">5</span></div><div class="line">i5 <span class="keyword">is</span> <span class="number">5</span></div><div class="line"><span class="comment">--------------------test_defer--------------------</span></div><div class="line">hello</div><div class="line">world</div><div class="line">counting</div><div class="line">done</div><div class="line"><span class="number">9</span></div><div class="line"><span class="number">8</span></div><div class="line"><span class="number">7</span></div><div class="line"><span class="number">6</span></div><div class="line"><span class="number">5</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure>
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/Go基础：循环语句/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Go基础：类型、变量、函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/Go基础：类型、变量、函数/">Go基础：类型、变量、函数</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/05/Go基础：类型、变量、函数/" class="archive-article-date">
-  	<time datetime="2017-03-05T13:57:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=35403523&auto=0&height=66"></iframe>
-
-<h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
-</code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
-</code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
-</code></pre><h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">bool</span></div><div class="line"><span class="keyword">string</span></div><div class="line"><span class="keyword">int</span>  <span class="keyword">int8</span>  <span class="keyword">int16</span>  <span class="keyword">int32</span>  <span class="keyword">int64</span></div><div class="line"><span class="keyword">uint</span> <span class="keyword">uint8</span> <span class="keyword">uint16</span> <span class="keyword">uint32</span> <span class="keyword">uint64</span> <span class="keyword">uintptr</span></div><div class="line"><span class="keyword">byte</span> <span class="comment">// uint8 的别名</span></div><div class="line"><span class="keyword">rune</span> <span class="comment">// int32 的别名, 代表一个Unicode码</span></div><div class="line"><span class="keyword">float32</span> <span class="keyword">float64</span></div><div class="line"><span class="keyword">complex64</span> <span class="keyword">complex128</span></div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/03/05/Go基础：类型、变量、函数/#more">more >></a>
-        
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -309,18 +265,74 @@ var _hmt = _hmt || [];
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/Go基础：类型、变量、函数/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lianghuiyong.online/2017/03/05/Go基础：循环语句/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/05/Go基础：类型、变量、函数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Go基础：类型、变量、函数</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -328,429 +340,45 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-Go环境搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/01/Go环境搭建/">Go环境搭建</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/01/Go环境搭建/" class="archive-article-date">
-  	<time datetime="2017-03-01T13:51:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2001320&auto=0&height=66"></iframe>
-
-<h2 id="1、将go-sdk解压到-root-sdk文件夹"><a href="#1、将go-sdk解压到-root-sdk文件夹" class="headerlink" title="1、将go sdk解压到 /root/sdk文件夹"></a>1、将go sdk解压到 /root/sdk文件夹</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># tar -xzf go1.7.linux-amd64.tar.gz -C /root/sdk</span></div></pre></td></tr></table></figure>
-<h2 id="2、-bashrc-添加path"><a href="#2、-bashrc-添加path" class="headerlink" title="2、.bashrc 添加path"></a>2、.bashrc 添加path</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> GOROOT=/root/sdk/go</div><div class="line"><span class="built_in">export</span> GOPATH=<span class="variable">$GOROOT</span>/lib</div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOROOT</span>/bin</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/03/01/Go环境搭建/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/01/Go环境搭建/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Go基础：循环语句" data-title="Go基础：循环语句" data-url="http://lianghuiyong.online/2017/03/05/Go基础：循环语句/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
   
-    <article id="post-自定义按钮ShapeButton" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/28/自定义按钮ShapeButton/">自定义按钮ShapeButton</a>
-    </h1>
-  
 
-        
-        <a href="/2017/02/28/自定义按钮ShapeButton/" class="archive-article-date">
-  	<time datetime="2017-02-28T11:34:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
 
 
-<p>开发时，为了一个简单的按钮要写一堆的样式代码，我表示我在写假代码。</p>
-<h1 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h1><p><a href="https://github.com/lianghuiyong/CustomUI" title="Github 地址">Github 地址</a></p>
-<h2 id="可定制属性"><a href="#可定制属性" class="headerlink" title="可定制属性"></a>可定制属性</h2><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">app:</span><span class="string">stroke :</span>细线宽度</div><div class="line"><span class="string">app:</span><span class="string">radius :</span>拐角宽度</div><div class="line"><span class="string">app:</span><span class="string">normalColor :</span>按钮颜色</div><div class="line"><span class="string">app:</span><span class="string">pressColor  :</span>按钮选中颜色</div><div class="line"><span class="string">app:</span><span class="string">stroke_normalColor :</span>细线颜色</div><div class="line"><span class="string">app:</span><span class="string">stroke_pressColor :</span>细线选中后的颜色</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/02/28/自定义按钮ShapeButton/#more">more >></a>
-        
-      
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Android 自定义UI</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/28/自定义按钮ShapeButton/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-通过系统通讯录获取联系人号码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/28/通过系统通讯录获取联系人号码/">通过系统通讯录获取联系人号码</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/28/通过系统通讯录获取联系人号码/" class="archive-article-date">
-  	<time datetime="2017-02-28T11:26:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28406526&auto=0&height=66"></iframe>
-
-<h2 id="1、点击跳转到通讯录界面"><a href="#1、点击跳转到通讯录界面" class="headerlink" title="1、点击跳转到通讯录界面"></a>1、点击跳转到通讯录界面</h2><figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Uri uri = Uri.parse(<span class="string">"content://contacts/people"</span>);</div><div class="line"><span class="keyword">Intent</span> <span class="keyword">intent</span> = new <span class="keyword">Intent</span>(<span class="keyword">Intent</span>.ACTION_PICK, uri);</div><div class="line">startActivityForResult(<span class="keyword">intent</span>, <span class="number">0</span>);</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/02/28/通过系统通讯录获取联系人号码/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/28/通过系统通讯录获取联系人号码/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Github使用hexo搭建博客与版本控制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/20/Github使用hexo搭建博客与版本控制/">GitHub使用Hexo搭建博客与版本控制</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/20/Github使用hexo搭建博客与版本控制/" class="archive-article-date">
-  	<time datetime="2017-02-20T15:16:30.205Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2001320&auto=0&height=66"></iframe>
-
-<h2 id="一-本地准备工作"><a href="#一-本地准备工作" class="headerlink" title="一. 本地准备工作"></a>一. 本地准备工作</h2><p>1、安装Node.js、Git</p>
-<h2 id="二-创建github仓库（以以下规则为准）"><a href="#二-创建github仓库（以以下规则为准）" class="headerlink" title="二. 创建github仓库（以以下规则为准）"></a>二. 创建github仓库（以以下规则为准）</h2><p>1、仓库名：github名.github.io（lianghuiyong.github.io）</p>
-<p>2、创建时勾选<strong>Initialize this repository with a README</strong>，会自动创建master分支</p>
-        
-          <a class="article-more-a" href="/2017/02/20/Github使用hexo搭建博客与版本控制/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">GitHub Pages</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/20/Github使用hexo搭建博客与版本控制/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/">打包出现： Cannot merge new index 65725 into a non-jumbo instruction!</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/" class="archive-article-date">
-  	<time datetime="2017-02-20T02:46:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=155910&auto=0&height=66"></iframe>
-
-<h1 id="1、build-gradle里添加"><a href="#1、build-gradle里添加" class="headerlink" title="1、build.gradle里添加"></a>1、build.gradle里添加</h1><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">android</span> &#123;</div><div class="line">  <span class="section">dexOptions</span> &#123;</div><div class="line">      <span class="attribute">jumboMode</span> <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/20/打包出现：-Cannot-merge-new-index-65725-into-a-non-jumbo-instruction/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Android-JCenter仓库搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/21/Android-JCenter仓库搭建/">Android JCenter仓库搭建</a>
-    </h1>
-  
-
-        
-        <a href="/2016/12/21/Android-JCenter仓库搭建/" class="archive-article-date">
-  	<time datetime="2016-12-21T08:22:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=455502271&auto=0&height=66"></iframe>
-
-<h2 id="JCenter准备"><a href="#JCenter准备" class="headerlink" title="JCenter准备"></a>JCenter准备</h2><ol>
-<li>用GitHub账号登陆<a href="https://bintray.com" title="bintray">bintray</a>。</li>
-<li>新建仓库，Add New Repository</li>
-</ol>
-        
-          <a class="article-more-a" href="/2016/12/21/Android-JCenter仓库搭建/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JCenter</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/21/Android-JCenter仓库搭建/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
-
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
           </div>
         </div>
@@ -771,8 +399,8 @@ var _hmt = _hmt || [];
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
