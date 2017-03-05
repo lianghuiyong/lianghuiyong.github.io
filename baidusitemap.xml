@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://lianghuiyong.online/2017/03/05/Go%E5%9F%BA%E7%A1%80%EF%BC%9A%E7%B1%BB%E5%9E%8B%E3%80%81%E5%8F%98%E9%87%8F%E3%80%81%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2017-03-05T14:05:09.281Z</lastmod>
+    <data>
+        <display>
+        <title>Go基础：类型、变量、函数</title>
+        <pubTime>2017-03-05T13:57:34.000Z</pubTime>
+        
+        <tag>服务器开发</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lianghuiyong.online/2017/03/01/Go%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2017-03-01T14:04:13.449Z</lastmod>
     <data>
@@ -28,9 +45,9 @@
         <title>Git使用笔录</title>
         <pubTime>2016-10-29T05:09:43.000Z</pubTime>
         
-        <tag>版本管理</tag>
-         
         <tag>Git</tag>
+         
+        <tag>版本管理</tag>
          
          
            
@@ -47,11 +64,11 @@
         <title>GitHub使用Hexo搭建博客与版本控制</title>
         <pubTime>2017-02-20T15:16:30.205Z</pubTime>
         
+        <tag>版本管理</tag>
+         
         <tag>GitHub Pages</tag>
          
         <tag>Hexo</tag>
-         
-        <tag>版本管理</tag>
          
          
            

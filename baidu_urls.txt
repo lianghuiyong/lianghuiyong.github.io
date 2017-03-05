@@ -1,3 +1,4 @@
+http://lianghuiyong.online/2017/03/05/Go基础：类型、变量、函数/
 http://lianghuiyong.online/2017/03/01/Go环境搭建/
 http://lianghuiyong.online/2017/02/28/自定义按钮ShapeButton/
 http://lianghuiyong.online/2017/02/28/通过系统通讯录获取联系人号码/
