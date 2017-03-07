@@ -13,7 +13,7 @@
   <meta name="description" content="运行环境：go version go1.8 windows/amd64
 编辑器JetBrains Gogland
 Go 官方test代码$GOPATH$\test
-基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune //">
+基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune // in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Go基础：类型、变量、函数">
 <meta property="og:url" content="http://lianghuiyong.online/2017/03/05/Go基础：类型、变量、函数/index.html">
@@ -21,14 +21,14 @@ Go 官方test代码$GOPATH$\test
 <meta property="og:description" content="运行环境：go version go1.8 windows/amd64
 编辑器JetBrains Gogland
 Go 官方test代码$GOPATH$\test
-基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune //">
-<meta property="og:updated_time" content="2017-03-05T14:42:41.271Z">
+基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune // in">
+<meta property="og:updated_time" content="2017-03-07T17:00:58.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Go基础：类型、变量、函数">
 <meta name="twitter:description" content="运行环境：go version go1.8 windows/amd64
 编辑器JetBrains Gogland
 Go 官方test代码$GOPATH$\test
-基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune //">
+基本类型12345678boolstringint  int8  int16  int32  int64uint uint8 uint16 uint32 uint64 uintptrbyte // uint8 的别名rune // in">
   
     <link rel="alternative" href="/atom.xml" title="梁惠涌の博客" type="application/atom+xml">
   
@@ -219,13 +219,13 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=35403523&auto=0&height=66"></iframe>
-
-<h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
+        <h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
 </code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
 </code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
 </code></pre><h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">bool</span></div><div class="line"><span class="keyword">string</span></div><div class="line"><span class="keyword">int</span>  <span class="keyword">int8</span>  <span class="keyword">int16</span>  <span class="keyword">int32</span>  <span class="keyword">int64</span></div><div class="line"><span class="keyword">uint</span> <span class="keyword">uint8</span> <span class="keyword">uint16</span> <span class="keyword">uint32</span> <span class="keyword">uint64</span> <span class="keyword">uintptr</span></div><div class="line"><span class="keyword">byte</span> <span class="comment">// uint8 的别名</span></div><div class="line"><span class="keyword">rune</span> <span class="comment">// int32 的别名, 代表一个Unicode码</span></div><div class="line"><span class="keyword">float32</span> <span class="keyword">float64</span></div><div class="line"><span class="keyword">complex64</span> <span class="keyword">complex128</span></div></pre></td></tr></table></figure>
 <a id="more"></a>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=35403523&auto=0&height=66"></iframe>
+
 <h2 id="练习代码"><a href="#练习代码" class="headerlink" title="练习代码"></a>练习代码</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*包名*/</span></div><div class="line"><span class="keyword">package</span> main</div><div class="line"></div><div class="line"><span class="comment">/*导包*/</span></div><div class="line"><span class="keyword">import</span> (</div><div class="line">    <span class="string">"fmt"</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line">    fmt.Println(<span class="string">"Go : Hello World!"</span>)</div><div class="line">    fmt.Println(add(<span class="number">25</span>, <span class="number">25</span>))</div><div class="line">    fmt.Println(swap(<span class="string">"huiyong"</span>, <span class="string">"liang"</span>))</div><div class="line">    fmt.Println(split(<span class="number">25</span>))</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//1、参数类型相同(x int, y int)，可简写成(x, y int)</span></div><div class="line"><span class="comment">//2、返回类型为 int</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">add</span><span class="params">(x, y <span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</div><div class="line">    <span class="keyword">return</span> x + y</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//1、返回类型为 (string, string)，</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">swap</span><span class="params">(x, y <span class="keyword">string</span>)</span> <span class="params">(<span class="keyword">string</span>, <span class="keyword">string</span>)</span></span> &#123;</div><div class="line">    <span class="keyword">return</span> y, x</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//1、返回类型(x, y int)，已经声明了返回变量x，y</span></div><div class="line"><span class="comment">//2、指定了返回变量时，return x, y 可简写成 return、</span></div><div class="line"><span class="comment">//3、 `:=` 简洁赋值语句用在明确类型的地方，用于替代 `var`</span></div><div class="line"></div><div class="line"><span class="comment">//等同</span></div><div class="line"><span class="comment">//func split(sum int) (int, int) &#123;</span></div><div class="line"><span class="comment">//    x := sum * 4 / 9</span></div><div class="line"><span class="comment">//    y := sum - x</span></div><div class="line"><span class="comment">//    return x, y</span></div><div class="line"><span class="comment">//&#125;</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">split</span><span class="params">(sum <span class="keyword">int</span>)</span> <span class="params">(x, y <span class="keyword">int</span>)</span></span> &#123;</div><div class="line">    x = sum * <span class="number">4</span> / <span class="number">9</span></div><div class="line">    y = sum - x</div><div class="line">    <span class="keyword">return</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
 
@@ -483,11 +483,11 @@ var _hmt = _hmt || [];
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">服务器开发</a>
+                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
+                <a href="javascript:void(0)" class="js-tag color1">服务器开发</a>
               </li>
             
               <li class="article-tag-list-item">
