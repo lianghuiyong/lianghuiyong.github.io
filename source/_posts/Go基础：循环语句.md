@@ -3,7 +3,7 @@ title: Go基础：循环语句
 date: 2017-03-05 23:02:16
 tags: [服务器开发]
 ---
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=211015&auto=0&height=66"></iframe>
+
 ## 运行环境：
     go version go1.8 windows/amd64
 
@@ -15,6 +15,8 @@ tags: [服务器开发]
     $GOPATH$\test
 
 <!--more-->
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=211015&auto=0&height=66"></iframe>
 
 ## 练习代码
 ```
