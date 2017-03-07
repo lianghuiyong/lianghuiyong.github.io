@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lianghuiyong.online/"/>
-  <updated>2017-03-07T17:00:46.367Z</updated>
+  <updated>2017-03-07T17:24:47.832Z</updated>
   <id>http://lianghuiyong.online/</id>
   
   <author>
@@ -20,9 +20,11 @@
     <link href="http://lianghuiyong.online/2017/03/05/Go%E5%9F%BA%E7%A1%80%EF%BC%9A%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
     <id>http://lianghuiyong.online/2017/03/05/Go基础：循环语句/</id>
     <published>2017-03-05T15:02:16.000Z</published>
-    <updated>2017-03-07T17:00:46.367Z</updated>
+    <updated>2017-03-07T17:24:47.832Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=211015&auto=0&height=66"></iframe>
+
+<h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
 </code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
 </code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
 </code></pre><a id="more"></a>
@@ -33,7 +35,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;运行环境：&quot;&gt;&lt;a href=&quot;#运行环境：&quot; class=&quot;headerlink&quot; title=&quot;运行环境：&quot;&gt;&lt;/a&gt;运行环境：&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;go version go1.8 windows/amd64
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=211015&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;运行环境：&quot;&gt;&lt;a href=&quot;#运行环境：&quot; class=&quot;headerlink&quot; title=&quot;运行环境：&quot;&gt;&lt;/a&gt;运行环境：&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;go version go1.8 windows/amd64
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;编辑器&quot;&gt;&lt;a href=&quot;#编辑器&quot; class=&quot;headerlink&quot; title=&quot;编辑器&quot;&gt;&lt;/a&gt;编辑器&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;JetBrains Gogland
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;Go-官方test代码&quot;&gt;&lt;a href=&quot;#Go-官方test代码&quot; class=&quot;headerlink&quot; title=&quot;Go 官方test代码&quot;&gt;&lt;/a&gt;Go 官方test代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;$GOPATH$\test
 &lt;/code&gt;&lt;/pre&gt;
@@ -289,9 +293,9 @@
     </summary>
     
     
-      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
-    
       <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
     
   </entry>
   

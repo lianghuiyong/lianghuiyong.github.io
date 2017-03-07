@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://lianghuiyong.online/2017/03/05/Go%E5%9F%BA%E7%A1%80%EF%BC%9A%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</loc>
+    <lastmod>2017-03-07T17:24:47.832Z</lastmod>
+    <data>
+        <display>
+        <title>Go基础：循环语句</title>
+        <pubTime>2017-03-05T15:02:16.000Z</pubTime>
+        
+        <tag>服务器开发</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lianghuiyong.online/2017/02/28/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%89%E9%92%AEShapeButton/</loc>
     <lastmod>2017-03-07T17:01:52.472Z</lastmod>
     <data>
@@ -89,23 +106,6 @@
 
     
   <url>
-    <loc>http://lianghuiyong.online/2017/03/05/Go%E5%9F%BA%E7%A1%80%EF%BC%9A%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</loc>
-    <lastmod>2017-03-07T17:00:46.367Z</lastmod>
-    <data>
-        <display>
-        <title>Go基础：循环语句</title>
-        <pubTime>2017-03-05T15:02:16.000Z</pubTime>
-        
-        <tag>服务器开发</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lianghuiyong.online/2017/02/20/Github%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
     <lastmod>2017-03-07T17:00:30.744Z</lastmod>
     <data>
@@ -151,9 +151,9 @@
         <title>Android JCenter仓库搭建</title>
         <pubTime>2016-12-21T08:22:23.000Z</pubTime>
         
-        <tag>Android</tag>
-         
         <tag>JCenter</tag>
+         
+        <tag>Android</tag>
          
          
            
