@@ -219,11 +219,11 @@
     </summary>
     
     
-      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
       <category term="GitHub Pages" scheme="http://lianghuiyong.online/tags/GitHub-Pages/"/>
     
       <category term="Hexo" scheme="http://lianghuiyong.online/tags/Hexo/"/>
+    
+      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -305,9 +305,9 @@
     </summary>
     
     
-      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
-    
       <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
     
   </entry>
   
@@ -393,9 +393,9 @@
     </summary>
     
     
-      <category term="Git" scheme="http://lianghuiyong.online/tags/Git/"/>
-    
       <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="Git" scheme="http://lianghuiyong.online/tags/Git/"/>
     
   </entry>
   
