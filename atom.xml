@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lianghuiyong.online/"/>
-  <updated>2017-03-12T08:36:48.140Z</updated>
+  <updated>2017-03-12T10:50:30.079Z</updated>
   <id>http://lianghuiyong.online/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>echo框架使用：获取与配置</title>
+    <link href="http://lianghuiyong.online/2017/03/12/echo%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%EF%BC%9A%E8%8E%B7%E5%8F%96%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://lianghuiyong.online/2017/03/12/echo框架使用：获取与配置/</id>
+    <published>2017-03-12T09:12:02.000Z</published>
+    <updated>2017-03-12T10:50:30.079Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="运行环境-1"><a href="#运行环境-1" class="headerlink" title="运行环境 1"></a>运行环境 1</h1><pre><code>Linux   :CentOS 7.0
+Go      :go version go1.8 linux/amd64
+GOPATH  :/root/sdk/go/lib
+</code></pre><h1 id="运行环境-2"><a href="#运行环境-2" class="headerlink" title="运行环境 2"></a>运行环境 2</h1><pre><code>Windows10
+Go      :go version go1.8 windows/amd64
+GOPATH  :C:\Go\lib
+</code></pre><a id="more"></a>
+<h1 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h1><pre><code>yum install git
+</code></pre><h1 id="获取-echo"><a href="#获取-echo" class="headerlink" title="获取 echo"></a>获取 echo</h1><pre><code>go get -v -u github.com/labstack/echo/
+</code></pre><h1 id="获取日志"><a href="#获取日志" class="headerlink" title="获取日志"></a>获取日志</h1><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">github.com<span class="regexp">/labstack/</span>echo (download)</div><div class="line">github.com<span class="regexp">/labstack/</span>gommon (download)</div><div class="line">github.com<span class="regexp">/mattn/</span>go-colorable (download)</div><div class="line">github.com<span class="regexp">/mattn/</span>go-isatty (download)</div><div class="line">github.com<span class="regexp">/valyala/</span>fasttemplate (download)</div><div class="line">Fetching <span class="string">https:</span><span class="comment">//golang.org/x/crypto/acme/autocert?go-get=1</span></div><div class="line">https fetch <span class="string">failed:</span> Get <span class="string">https:</span><span class="comment">//golang.org/x/crypto/acme/autocert?go-get=1: dial tcp 216.239.37.1:443: i/o timeout</span></div><div class="line"><span class="keyword">package</span> golang.org<span class="regexp">/x/</span>crypto<span class="regexp">/acme/</span><span class="string">autocert:</span> unrecognized <span class="keyword">import</span> path <span class="string">"golang.org/x/crypto/acme/autocert"</span> (https fet</div><div class="line"><span class="string">ch:</span> Get <span class="string">https:</span><span class="comment">//golang.org/x/crypto/acme/autocert?go-get=1: dial tcp 216.239.37.1:443: i/o timeout)</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>1、下到一半的时候可能会出现错误，这时，编译项目的时候缺少哪个包就去对应的下就好了，guthub上也有一些相对应的包（github源的包都能go get到的）</p>
+<p>go get -u -v github.com/stretchr/testify/assert</p>
+<p>2、项目会出现”golang.org/x/net/context”丢失，使用间接获取，</p>
+<p>go get -u -v github.com/golang/net</p>
+<p>在golang.org文件夹下创建x文件夹，将$GOPATH\src\github.com\golang 下的net复制到$GOPATH\src\golang.org\x目录下 ,然后执行：</p>
+<p>go install -v golang.org/x/net/context</p>
+<p>3、运行时可能会出现找不到包cannot find package “github.com/dgrijalva/jwt-go”</p>
+<p>go get -u -v github.com/dgrijalva/jwt-go</p>
+</blockquote>
+<h1 id="再安装一遍echo"><a href="#再安装一遍echo" class="headerlink" title="再安装一遍echo"></a>再安装一遍echo</h1><pre><code>go install -v github.com/labstack/echo/
+</code></pre><h1 id="echo测试代码"><a href="#echo测试代码" class="headerlink" title="echo测试代码"></a>echo测试代码</h1><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> main</div><div class="line"></div><div class="line"><span class="keyword">import</span> (</div><div class="line">	<span class="string">"github.com/labstack/echo"</span></div><div class="line">	<span class="string">"github.com/labstack/echo/middleware"</span></div><div class="line">	<span class="string">"net/http"</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="function">func <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	e := echo.New()</div><div class="line">	// Middleware</div><div class="line">	e.Use(middleware.Logger())</div><div class="line">	e.Use(middleware.Recover())</div><div class="line"></div><div class="line">	// Route =&gt; <span class="keyword">handler</span></div><div class="line">	e.GET(<span class="string">"/"</span>, func(c echo.Context) <span class="keyword">error</span> &#123;</div><div class="line">		<span class="keyword">return</span> c.String(http.StatusOK, <span class="string">"Hello, World!\n"</span>)</div><div class="line">	&#125;)</div><div class="line"></div><div class="line">	<span class="comment">// Start server</span></div><div class="line">	e.Logger.Fatal(e.Start(<span class="string">":1323"</span>))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="echo监控"><a href="#echo监控" class="headerlink" title="echo监控"></a>echo监控</h1><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">⇛ http server started on <span class="string">[::]</span>:<span class="number">1323</span></div><div class="line">&#123;<span class="string">"time"</span>:<span class="string">"2017-03-12T18:40:54.7173369+08:00"</span>,<span class="string">"id"</span>:<span class="string">""</span>,<span class="string">"remote_ip"</span>:<span class="string">"::1"</span>,<span class="string">"host"</span>:<span class="string">"localhost:1323"</span>,<span class="string">"method"</span>:<span class="string">"<span class="keyword">GET</span>"</span>,<span class="string">"uri"</span>:<span class="string">"/"</span>,<span class="string">"status"</span>:<span class="number">200</span>, <span class="string">"latency"</span>:<span class="number">0</span>,<span class="string">"latency_human"</span>:<span class="string">"0s"</span>,<span class="string">"bytes_in"</span>:<span class="number">0</span>,<span class="string">"bytes_out"</span>:<span class="number">14</span>&#125;</div><div class="line">&#123;<span class="string">"time"</span>:<span class="string">"2017-03-12T18:40:54.7754925+08:00"</span>,<span class="string">"id"</span>:<span class="string">""</span>,<span class="string">"remote_ip"</span>:<span class="string">"::1"</span>,<span class="string">"host"</span>:<span class="string">"localhost:1323"</span>,<span class="string">"method"</span>:<span class="string">"<span class="keyword">GET</span>"</span>,<span class="string">"uri"</span>:<span class="string">"/favicon.ico"</span>,<span class="string">"status"</span>:<span class="number">404</span>, <span class="string">"latency"</span>:<span class="number">0</span>,<span class="string">"latency_human"</span>:<span class="string">"0s"</span>,<span class="string">"bytes_in"</span>:<span class="number">0</span>,<span class="string">"bytes_out"</span>:<span class="number">23</span>&#125;</div></pre></td></tr></table></figure>
+<h1 id="本地访问"><a href="#本地访问" class="headerlink" title="本地访问"></a>本地访问</h1><p><img src="http://oeqej1j2m.bkt.clouddn.com/hello-echo.JPG" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;运行环境-1&quot;&gt;&lt;a href=&quot;#运行环境-1&quot; class=&quot;headerlink&quot; title=&quot;运行环境 1&quot;&gt;&lt;/a&gt;运行环境 1&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Linux   :CentOS 7.0
+Go      :go version go1.8 linux/amd64
+GOPATH  :/root/sdk/go/lib
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;运行环境-2&quot;&gt;&lt;a href=&quot;#运行环境-2&quot; class=&quot;headerlink&quot; title=&quot;运行环境 2&quot;&gt;&lt;/a&gt;运行环境 2&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Windows10
+Go      :go version go1.8 windows/amd64
+GOPATH  :C:\Go\lib
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="服务器开发" scheme="http://lianghuiyong.online/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>GO基础：复合数据类型</title>
@@ -322,9 +372,9 @@
     </summary>
     
     
-      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
-    
       <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
     
   </entry>
   
