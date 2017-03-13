@@ -16,6 +16,8 @@ tags: [服务器开发]
 
 <!--more-->
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=25862794&auto=0&height=66"></iframe>
+
 # 安装 git
     yum install git
 
@@ -23,6 +25,9 @@ tags: [服务器开发]
     go get -v -u github.com/labstack/echo/
 
 # 获取日志
+
+> 对于下载失败的库，都可以到github.com/golang/去找！
+
 ```
 github.com/labstack/echo (download)
 github.com/labstack/gommon (download)
@@ -56,42 +61,121 @@ ch: Get https://golang.org/x/crypto/acme/autocert?go-get=1: dial tcp 216.239.37.
 
 # echo测试代码
 
+![](http://oeqej1j2m.bkt.clouddn.com/echo_test_post.png)
+
+## api.go
+```
+package api
+
+import (
+	"../data"
+	"github.com/labstack/echo"
+	"net/http"
+)
+
+//noinspection GoUnusedExportedFunction
+func PostTest(c echo.Context) error{
+
+	movies := []data.Movie{
+		{"金刚狼", "2017", []string{"休·杰克曼", "达芙妮·基恩", "帕特里克·斯图尔特"}},
+		{"极限特工", "2017", []string{"范·迪塞尔", "露比·罗丝", "妮娜·杜波夫"}},
+		{"功夫瑜伽", "2017", []string{"成龙", "李治廷", "张艺兴"}},
+		{"生化危机：终章", "2017", []string{"米拉·乔沃维奇", "伊恩·格雷", "艾丽·拉特"}},
+	}
+
+	baseMovie := data.BaseResponse{http.StatusOK, "success", movies}
+
+	return c.JSONPretty(http.StatusOK, baseMovie,"    ")
+}
+```
+
+## BaseResponse.go
+```
+package data
+
+//Go 默认是不支持泛型的，定义一个接口结构体，即可当泛型使用
+type T interface {
+
+}
+
+type BaseResponse struct {
+	Code int
+	Msg  string
+	Data T
+}
+```
+
+## Movie.go
+```
+package data
+
+type Movie struct {
+	Title  string
+	Year   string
+	Actors []string
+}
+```
+
+## main.go
 ```
 package main
 
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"net/http"
+	"./api"
 )
 
 func main() {
 	e := echo.New()
+
 	// Middleware
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-	// Route => handler
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!\n")
-	})
+	//CORS
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins: []string{"*"},
+		AllowMethods: []string{echo.GET, echo.HEAD, echo.PUT, echo.PATCH, echo.POST, echo.DELETE},
+	}))
 
-	// Start server
-	e.Logger.Fatal(e.Start(":1323"))
+	//static file serviing
+	e.Static("/static", "assets")
+
+	// Routers
+	e.POST("/", api.PostTest)
+	//e.GET("/users/:id", controllers.ShowUser)
+	//e.GET("/users", controllers.AllUsers)
+	//e.PUT("/users/:id", controllers.UpdateUser)
+	//e.DELETE("/users/:id",controllers.DeleteUser)
+
+	// Server
+	e.Start(":1323")
 }
 ```
 
 # echo监控
 
 ```
+"D:\Program Files (x86)\JetBrains\Gogland\bin\runnerw.exe" C:/Go\bin\go.exe run E:/Code/Go-Home/server/main.go
 ⇛ http server started on [::]:1323
-{"time":"2017-03-12T18:40:54.7173369+08:00","id":"","remote_ip":"::1","host":"localhost:1323","method":"GET","uri":"/","status":200, "latency":0,"latency_human":"0s","bytes_in":0,"bytes_out":14}
-{"time":"2017-03-12T18:40:54.7754925+08:00","id":"","remote_ip":"::1","host":"localhost:1323","method":"GET","uri":"/favicon.ico","status":404, "latency":0,"latency_human":"0s","bytes_in":0,"bytes_out":23}
+{"time":"2017-03-13T20:05:50.8909566+08:00","id":"","remote_ip":"::1","host":"localhost:1323","method":"POST","uri":"/","status":200, "latency":0,"latency_human":"0s","bytes_in":0,"bytes_out":973}
 ```
 
-# 本地访问
+# 请求测试
 
-![](http://oeqej1j2m.bkt.clouddn.com/hello-echo.JPG)
+![](http://oeqej1j2m.bkt.clouddn.com/echo_test_post2.png)
 
 
-# CentOS
+# CentOS 7 防火墙问题
+
+## 1.测试是否可以访问
+
+    telnet 123.56.4.89 1323
+
+## 2.CentOS 7 关闭防火墙
+
+    firewall-cmd --zone=public --add-port=55555/tcp --permanent
+    firewall-cmd --reload
+
+> 命令含义： --zone #作用域 --add-port=80/tcp #添加端口，格式为：端口/通讯协议 --permanent #永久生效，没有此参数重启后失效
