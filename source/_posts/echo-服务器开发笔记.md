@@ -14,3 +14,5 @@ func newClient() *http.Client {
 	return &http.Client{Transport: tr}
 }
 ```
+
+<!--more-->
