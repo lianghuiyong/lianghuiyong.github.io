@@ -8,18 +8,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lianghuiyong.online">
-  <title>相册 | 梁惠涌の博客</title>
+  <title>Android studio 2.3 Cmake Jni 环境搭建 | 梁惠涌の博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="图片来自instagram，正在加载中…">
-<meta property="og:type" content="website">
-<meta property="og:title" content="相册">
-<meta property="og:url" content="http://lianghuiyong.online/instagram/index.html">
+  <meta name="description" content="使用体验c++的支持很优雅！
+环境需求1、Android studio 2.3
+2、NDK 版本：14.1.38
+3、Cmake(SDK tools 列表里下载)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android studio 2.3 Cmake Jni 环境搭建">
+<meta property="og:url" content="http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/index.html">
 <meta property="og:site_name" content="梁惠涌の博客">
-<meta property="og:description" content="图片来自instagram，正在加载中…">
-<meta property="og:updated_time" content="2017-02-21T12:49:33.413Z">
+<meta property="og:description" content="使用体验c++的支持很优雅！
+环境需求1、Android studio 2.3
+2、NDK 版本：14.1.38
+3、Cmake(SDK tools 列表里下载)">
+<meta property="og:updated_time" content="2017-04-03T10:06:15.725Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="相册">
-<meta name="twitter:description" content="图片来自instagram，正在加载中…">
+<meta name="twitter:title" content="Android studio 2.3 Cmake Jni 环境搭建">
+<meta name="twitter:description" content="使用体验c++的支持很优雅！
+环境需求1、Android studio 2.3
+2、NDK 版本：14.1.38
+3、Cmake(SDK tools 列表里下载)">
   
     <link rel="alternative" href="/atom.xml" title="梁惠涌の博客" type="application/atom+xml">
   
@@ -184,25 +193,33 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-instagram" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Android-studio-2-3-Cmake-Jni-环境搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      相册
+      Android studio 2.3 Cmake Jni 环境搭建
     </h1>
   
 
+        
+        <a href="/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/" class="archive-article-date">
+  	<time datetime="2017-03-31T11:18:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-31</time>
+</a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><div class="instagram" data-client-id="956dd096b6e5496aba6662165b9b8443" data-user-id="438522285"><br>    <a href="http://instagram.com/litten225" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a><br></div></p>
-<script src="/js/jquery.lazyload.js"></script>
-<script src="/js/instagram.js"></script>
+        <h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><pre><code>c++的支持很优雅！
+</code></pre><h1 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h1><p>1、Android studio 2.3</p>
+<p>2、NDK 版本：14.1.38</p>
+<p>3、Cmake(SDK tools 列表里下载)</p>
+<a id="more"></a>
+<h2 id="gradle配置"><a href="#gradle配置" class="headerlink" title="gradle配置"></a>gradle配置</h2><figure class="highlight lasso"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">android &#123;</div><div class="line">    <span class="params">...</span><span class="params">...</span></div><div class="line">    defaultConfig &#123;</div><div class="line">        <span class="params">...</span><span class="params">...</span></div><div class="line">        externalNativeBuild &#123;</div><div class="line">            cmake &#123;</div><div class="line">                <span class="comment">//以下为C开发方式</span></div><div class="line">                <span class="comment">//cppFlags ""</span></div><div class="line">                </div><div class="line">                <span class="comment">//以下为C++开发方式，具体参数可以百度下</span></div><div class="line">                cppFlags <span class="string">"-std=c++11"</span>, <span class="string">"-frtti"</span>, <span class="string">"-fexceptions"</span></div><div class="line">            &#125;</div><div class="line"></div><div class="line">            ndk &#123;</div><div class="line">                <span class="comment">//生成的平台支持列表</span></div><div class="line">                abiFilters <span class="string">'armeabi-v7a'</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="params">...</span><span class="params">...</span></div><div class="line">    externalNativeBuild &#123;</div><div class="line">        cmake &#123;</div><div class="line">            <span class="comment">//Cmake 配置文件</span></div><div class="line">            path <span class="string">"CMakeLists.txt"</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="CMakeLists示例说明"><a href="#CMakeLists示例说明" class="headerlink" title="CMakeLists示例说明"></a>CMakeLists示例说明</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">//版本相关</div><div class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.6</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># Creates and names a library, sets it as either STATIC</span></div><div class="line"><span class="comment"># or SHARED, and provides the relative paths to its source code.</span></div><div class="line"><span class="comment"># You can define multiple libraries, and CMake builds it for you.</span></div><div class="line"><span class="comment"># Gradle automatically packages shared libraries with your APK.</span></div><div class="line"></div><div class="line">//配置c++文件路径和头文件路径</div><div class="line"><span class="keyword">set</span>(CMAKE_VERBOSE_MAKEFILE <span class="keyword">on</span>)</div><div class="line"><span class="keyword">set</span>(libs <span class="string">"$&#123;CMAKE_SOURCE_DIR&#125;/src/main/jniLibs"</span>)</div><div class="line"><span class="keyword">include_directories</span>(<span class="variable">$&#123;CMAKE_SOURCE_DIR&#125;</span>/src/main/cpp/<span class="keyword">include</span>)</div><div class="line"></div><div class="line"><span class="comment">#--------------------------------------------------- import ---------------------------------------------------#</span></div><div class="line">//根据项目自己的Jni依赖需求,需要引用第三方so库的时候，使用<span class="keyword">add_library</span></div><div class="line"><span class="keyword">add_library</span>(libopencv_java3 SHARED IMPORTED )</div><div class="line"><span class="keyword">set_target_properties</span>(libopencv_java3 PROPERTIES</div><div class="line">    IMPORTED_LOCATION <span class="string">"$&#123;libs&#125;/$&#123;ANDROID_ABI&#125;/libopencv_java3.so"</span>)</div><div class="line"></div><div class="line">//这个在gradle里配置了，这里应该是不用写的</div><div class="line"><span class="keyword">set</span>(CMAKE_CXX_FLAGS <span class="string">"$&#123;CMAKE_CXX_FLAGS&#125; -std=gnu++11 -fexceptions -frtti"</span>)</div><div class="line"></div><div class="line">//自己的so库lib名，以及依赖的c++文件</div><div class="line"><span class="keyword">add_library</span>( <span class="comment"># Sets the name of the library.</span></div><div class="line">             scanner</div><div class="line"></div><div class="line">             <span class="comment"># Sets the library as a shared library.</span></div><div class="line">             SHARED</div><div class="line"></div><div class="line">             <span class="comment"># Provides a relative path to your source file(s).</span></div><div class="line">             <span class="comment"># Associated headers in the same location as their source</span></div><div class="line">             <span class="comment"># file are automatically included.</span></div><div class="line">             src/main/cpp/libmanager.cpp</div><div class="line">             src/main/cpp/scanner.cpp)</div><div class="line"></div><div class="line"><span class="keyword">find_library</span>( <span class="comment"># Sets the name of the path variable.</span></div><div class="line">              log-lib</div><div class="line"></div><div class="line">              <span class="comment"># Specifies the name of the NDK library that</span></div><div class="line">              <span class="comment"># you want CMake to locate.</span></div><div class="line">              log)</div><div class="line"></div><div class="line">//库连接，scanner依赖了后面的静态库</div><div class="line"><span class="keyword">target_link_libraries</span>(scanner android log</div><div class="line">    libopencv_java3</div><div class="line">    <span class="variable">$&#123;log-lib&#125;</span></div><div class="line">    )</div></pre></td></tr></table></figure>
       
 
       
@@ -231,6 +248,17 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -281,7 +309,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://lianghuiyong.online/instagram/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -293,6 +321,25 @@ var _hmt = _hmt || [];
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/04/03/使用Charles抓Https包过程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          使用Charles抓Https包过程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/31/echo-服务器开发笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">echo 服务器开发笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -301,7 +348,7 @@ var _hmt = _hmt || [];
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="instagram" data-title="相册" data-url="http://lianghuiyong.online/instagram/index.html"></div>
+	<div class="ds-thread" data-thread-key="Android-studio-2-3-Cmake-Jni-环境搭建" data-title="Android studio 2.3 Cmake Jni 环境搭建" data-url="http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -359,7 +406,7 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

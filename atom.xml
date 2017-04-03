@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lianghuiyong.online/"/>
-  <updated>2017-03-13T12:21:42.226Z</updated>
+  <updated>2017-04-03T13:52:32.219Z</updated>
   <id>http://lianghuiyong.online/</id>
   
   <author>
@@ -14,6 +14,107 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Charles抓Https包过程</title>
+    <link href="http://lianghuiyong.online/2017/04/03/%E4%BD%BF%E7%94%A8Charles%E6%8A%93Https%E5%8C%85%E8%BF%87%E7%A8%8B/"/>
+    <id>http://lianghuiyong.online/2017/04/03/使用Charles抓Https包过程/</id>
+    <published>2017-04-03T10:59:53.000Z</published>
+    <updated>2017-04-03T13:52:32.219Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1、平台"><a href="#1、平台" class="headerlink" title="1、平台"></a>1、平台</h2><p>Windows 10</p>
+<p>Charles 4.0.2</p>
+<a id="more"></a>
+<h2 id="2、代理端口监听"><a href="#2、代理端口监听" class="headerlink" title="2、代理端口监听"></a>2、代理端口监听</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/Charles%20%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+<h2 id="3、SSL证书设置"><a href="#3、SSL证书设置" class="headerlink" title="3、SSL证书设置"></a>3、SSL证书设置</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/Charles%20SSL%E8%AF%81%E4%B9%A6%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+<h2 id="4、SSL端口设置"><a href="#4、SSL端口设置" class="headerlink" title="4、SSL端口设置"></a>4、SSL端口设置</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/Charles%20SSL%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1、平台&quot;&gt;&lt;a href=&quot;#1、平台&quot; class=&quot;headerlink&quot; title=&quot;1、平台&quot;&gt;&lt;/a&gt;1、平台&lt;/h2&gt;&lt;p&gt;Windows 10&lt;/p&gt;
+&lt;p&gt;Charles 4.0.2&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="服务器开发" scheme="http://lianghuiyong.online/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android studio 2.3 Cmake Jni 环境搭建</title>
+    <link href="http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/</id>
+    <published>2017-03-31T11:18:19.000Z</published>
+    <updated>2017-04-03T10:06:15.725Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><pre><code>c++的支持很优雅！
+</code></pre><h1 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h1><p>1、Android studio 2.3</p>
+<p>2、NDK 版本：14.1.38</p>
+<p>3、Cmake(SDK tools 列表里下载)</p>
+<a id="more"></a>
+<h2 id="gradle配置"><a href="#gradle配置" class="headerlink" title="gradle配置"></a>gradle配置</h2><figure class="highlight lasso"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">android &#123;</div><div class="line">    <span class="params">...</span><span class="params">...</span></div><div class="line">    defaultConfig &#123;</div><div class="line">        <span class="params">...</span><span class="params">...</span></div><div class="line">        externalNativeBuild &#123;</div><div class="line">            cmake &#123;</div><div class="line">                <span class="comment">//以下为C开发方式</span></div><div class="line">                <span class="comment">//cppFlags ""</span></div><div class="line">                </div><div class="line">                <span class="comment">//以下为C++开发方式，具体参数可以百度下</span></div><div class="line">                cppFlags <span class="string">"-std=c++11"</span>, <span class="string">"-frtti"</span>, <span class="string">"-fexceptions"</span></div><div class="line">            &#125;</div><div class="line"></div><div class="line">            ndk &#123;</div><div class="line">                <span class="comment">//生成的平台支持列表</span></div><div class="line">                abiFilters <span class="string">'armeabi-v7a'</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="params">...</span><span class="params">...</span></div><div class="line">    externalNativeBuild &#123;</div><div class="line">        cmake &#123;</div><div class="line">            <span class="comment">//Cmake 配置文件</span></div><div class="line">            path <span class="string">"CMakeLists.txt"</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="CMakeLists示例说明"><a href="#CMakeLists示例说明" class="headerlink" title="CMakeLists示例说明"></a>CMakeLists示例说明</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">//版本相关</div><div class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.6</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># Creates and names a library, sets it as either STATIC</span></div><div class="line"><span class="comment"># or SHARED, and provides the relative paths to its source code.</span></div><div class="line"><span class="comment"># You can define multiple libraries, and CMake builds it for you.</span></div><div class="line"><span class="comment"># Gradle automatically packages shared libraries with your APK.</span></div><div class="line"></div><div class="line">//配置c++文件路径和头文件路径</div><div class="line"><span class="keyword">set</span>(CMAKE_VERBOSE_MAKEFILE <span class="keyword">on</span>)</div><div class="line"><span class="keyword">set</span>(libs <span class="string">"$&#123;CMAKE_SOURCE_DIR&#125;/src/main/jniLibs"</span>)</div><div class="line"><span class="keyword">include_directories</span>(<span class="variable">$&#123;CMAKE_SOURCE_DIR&#125;</span>/src/main/cpp/<span class="keyword">include</span>)</div><div class="line"></div><div class="line"><span class="comment">#--------------------------------------------------- import ---------------------------------------------------#</span></div><div class="line">//根据项目自己的Jni依赖需求,需要引用第三方so库的时候，使用<span class="keyword">add_library</span></div><div class="line"><span class="keyword">add_library</span>(libopencv_java3 SHARED IMPORTED )</div><div class="line"><span class="keyword">set_target_properties</span>(libopencv_java3 PROPERTIES</div><div class="line">    IMPORTED_LOCATION <span class="string">"$&#123;libs&#125;/$&#123;ANDROID_ABI&#125;/libopencv_java3.so"</span>)</div><div class="line"></div><div class="line">//这个在gradle里配置了，这里应该是不用写的</div><div class="line"><span class="keyword">set</span>(CMAKE_CXX_FLAGS <span class="string">"$&#123;CMAKE_CXX_FLAGS&#125; -std=gnu++11 -fexceptions -frtti"</span>)</div><div class="line"></div><div class="line">//自己的so库lib名，以及依赖的c++文件</div><div class="line"><span class="keyword">add_library</span>( <span class="comment"># Sets the name of the library.</span></div><div class="line">             scanner</div><div class="line"></div><div class="line">             <span class="comment"># Sets the library as a shared library.</span></div><div class="line">             SHARED</div><div class="line"></div><div class="line">             <span class="comment"># Provides a relative path to your source file(s).</span></div><div class="line">             <span class="comment"># Associated headers in the same location as their source</span></div><div class="line">             <span class="comment"># file are automatically included.</span></div><div class="line">             src/main/cpp/libmanager.cpp</div><div class="line">             src/main/cpp/scanner.cpp)</div><div class="line"></div><div class="line"><span class="keyword">find_library</span>( <span class="comment"># Sets the name of the path variable.</span></div><div class="line">              log-lib</div><div class="line"></div><div class="line">              <span class="comment"># Specifies the name of the NDK library that</span></div><div class="line">              <span class="comment"># you want CMake to locate.</span></div><div class="line">              log)</div><div class="line"></div><div class="line">//库连接，scanner依赖了后面的静态库</div><div class="line"><span class="keyword">target_link_libraries</span>(scanner android log</div><div class="line">    libopencv_java3</div><div class="line">    <span class="variable">$&#123;log-lib&#125;</span></div><div class="line">    )</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;使用体验&quot;&gt;&lt;a href=&quot;#使用体验&quot; class=&quot;headerlink&quot; title=&quot;使用体验&quot;&gt;&lt;/a&gt;使用体验&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;c++的支持很优雅！
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;环境需求&quot;&gt;&lt;a href=&quot;#环境需求&quot; class=&quot;headerlink&quot; title=&quot;环境需求&quot;&gt;&lt;/a&gt;环境需求&lt;/h1&gt;&lt;p&gt;1、Android studio 2.3&lt;/p&gt;
+&lt;p&gt;2、NDK 版本：14.1.38&lt;/p&gt;
+&lt;p&gt;3、Cmake(SDK tools 列表里下载)&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>echo 服务器开发笔记</title>
+    <link href="http://lianghuiyong.online/2017/03/31/echo-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <id>http://lianghuiyong.online/2017/03/31/echo-服务器开发笔记/</id>
+    <published>2017-03-31T01:36:24.000Z</published>
+    <updated>2017-04-03T10:06:15.726Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1、解决Http-x509-未认证的验证问题"><a href="#1、解决Http-x509-未认证的验证问题" class="headerlink" title="1、解决Http x509 未认证的验证问题"></a>1、解决Http x509 未认证的验证问题</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">func</span> <span class="selector-tag">newClient</span>() *<span class="selector-tag">http</span><span class="selector-class">.Client</span> &#123;</div><div class="line">	<span class="attribute">tr </span>:= &amp;http.Transport&#123;</div><div class="line">		TLSClientConfig: &amp;tls.Config&#123;InsecureSkipVerify: true&#125;,</div><div class="line">	&#125;</div><div class="line">	<span class="selector-tag">return</span> &amp;<span class="selector-tag">http</span><span class="selector-class">.Client</span>&#123;<span class="attribute">Transport</span>: tr&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1、解决Http-x509-未认证的验证问题&quot;&gt;&lt;a href=&quot;#1、解决Http-x509-未认证的验证问题&quot; class=&quot;headerlink&quot; title=&quot;1、解决Http x509 未认证的验证问题&quot;&gt;&lt;/a&gt;1、解决Http x509 未认证的验证问题&lt;/h2&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;newClient&lt;/span&gt;() *&lt;span class=&quot;selector-tag&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.Client&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;tr &lt;/span&gt;:= &amp;amp;http.Transport&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		TLSClientConfig: &amp;amp;tls.Config&amp;#123;InsecureSkipVerify: true&amp;#125;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;selector-tag&quot;&gt;return&lt;/span&gt; &amp;amp;&lt;span class=&quot;selector-tag&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.Client&lt;/span&gt;&amp;#123;&lt;span class=&quot;attribute&quot;&gt;Transport&lt;/span&gt;: tr&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="服务器开发" scheme="http://lianghuiyong.online/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Apk反编译</title>
+    <link href="http://lianghuiyong.online/2017/03/30/Android-Apk%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
+    <id>http://lianghuiyong.online/2017/03/30/Android-Apk反编译/</id>
+    <published>2017-03-30T03:20:06.000Z</published>
+    <updated>2017-04-03T10:06:15.725Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、解apk包"><a href="#1、解apk包" class="headerlink" title="1、解apk包"></a>1、解apk包</h3><pre><code>apktool d -s ***.apk
+</code></pre><p><img src="http://o9or3yi8n.bkt.clouddn.com/Android%20%E5%8F%8D%E7%BC%96%E8%AF%91.png.png" alt=""></p>
+<h3 id="2、反编译class文件"><a href="#2、反编译class文件" class="headerlink" title="2、反编译class文件"></a>2、反编译class文件</h3><pre><code>dex2jar.bat D:\apktool\d2japk\classes.dex
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、解apk包&quot;&gt;&lt;a href=&quot;#1、解apk包&quot; class=&quot;headerlink&quot; title=&quot;1、解apk包&quot;&gt;&lt;/a&gt;1、解apk包&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;apktool d -s ***.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img 
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>echo框架使用：获取与配置</title>
@@ -305,11 +406,11 @@ GOPATH  :C:\Go\lib
     </summary>
     
     
+      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
       <category term="GitHub Pages" scheme="http://lianghuiyong.online/tags/GitHub-Pages/"/>
     
       <category term="Hexo" scheme="http://lianghuiyong.online/tags/Hexo/"/>
-    
-      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -387,9 +488,9 @@ GOPATH  :C:\Go\lib
     </summary>
     
     
-      <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
-    
       <category term="Android" scheme="http://lianghuiyong.online/tags/Android/"/>
+    
+      <category term="JCenter" scheme="http://lianghuiyong.online/tags/JCenter/"/>
     
   </entry>
   
@@ -473,9 +574,9 @@ GOPATH  :C:\Go\lib
     </summary>
     
     
-      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
       <category term="Git" scheme="http://lianghuiyong.online/tags/Git/"/>
+    
+      <category term="版本管理" scheme="http://lianghuiyong.online/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
