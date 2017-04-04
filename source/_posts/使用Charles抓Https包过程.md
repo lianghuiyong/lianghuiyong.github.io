@@ -20,4 +20,7 @@ Charles 4.0.2
 ![](http://oeqej1j2m.bkt.clouddn.com/Charles%20SSL%E8%AF%81%E4%B9%A6%E8%AE%BE%E7%BD%AE.png)
 
 ## 4、SSL端口设置
+
+手机获取SSL认证：http://charlesproxy.com/getssl
+
 ![](http://oeqej1j2m.bkt.clouddn.com/Charles%20SSL%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE.png)
