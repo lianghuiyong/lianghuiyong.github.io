@@ -169,14 +169,14 @@ Dagger则是把对象的构建方法、构造参数和具体的new动作，做�
 
 #### Dagger使用方式一：构造参数为当前this时
 
-- 1、构造方法使用@Inject标注构造方法，表明该构造方法是Dagger注入入口
+ 1、构造方法使用@Inject标注构造方法，表明该构造方法是Dagger注入入口
 ```
     @Inject
     public Presenter(MvpView mView) {
         this.mView = (Test_DaggerListContract.View)mView;
     }
 ```
-- 2、使用@Module标注，创建构造方法使用时参数的Module，@Provides标注为该方法返回参数实体类型
+ 2、使用@Module标注，创建构造方法使用时参数的Module，@Provides标注为该方法返回参数实体类型
 ```
     @Module
     public class PresenterModule {
@@ -194,7 +194,7 @@ Dagger则是把对象的构建方法、构造参数和具体的new动作，做�
         }
     }
 ```
-- 3、创建ViewComponent，@Component标注的方法，ViewComponent会自动生成一个DaggerViewComponent的方法，modules后面为参数的Module，dependencies后面为注入的依赖。
+ 3、创建ViewComponent，@Component标注的方法，ViewComponent会自动生成一个DaggerViewComponent的方法，modules后面为参数的Module，dependencies后面为注入的依赖。
 ```java
 @ActivityScoped
 @Component(modules = PresenterModule.class)
@@ -202,7 +202,7 @@ public interface ViewComponent {
     void inject(Test_DaggerListActivity activity);
 }
 ```
-- 4、通过DaggerViewComponent的方法注入，@Inject标注的presenter对象已经实例化了。
+ 4、通过DaggerViewComponent的方法注入，@Inject标注的presenter对象已经实例化了。
 ```java
 public class Test_DaggerListActivity {
     @Inject
@@ -221,7 +221,7 @@ public class Test_DaggerListActivity {
 
 #### Dagger使用方式二：构造参数非当前this
 
-- 1、构造方法使用@Inject标注构造方法，表明该构造方法是Dagger注入入口
+ 1、构造方法使用@Inject标注构造方法，表明该构造方法是Dagger注入入口
 ```
 public class Test2Repository implements Test2Api {
     
@@ -238,7 +238,7 @@ public class Test2Repository implements Test2Api {
     ......
 }
 ```
-- 2、使用@Module标注，创建构造方法使用时参数的Module，@Provides标注为该方法返回参数实体类型
+ 2、使用@Module标注，创建构造方法使用时参数的Module，@Provides标注为该方法返回参数实体类型
 ```
 @Module
 public class Test1RepositoryModule {
@@ -259,7 +259,7 @@ public class Test1RepositoryModule {
 
 }
 ```
-- 3、创建ViewComponent，@Component标注的方法，ViewComponent会自动生成一个DaggerViewComponent的方法，modules后面为参数的Module，dependencies后面为注入的依赖。
+ 3、创建ViewComponent，@Component标注的方法，ViewComponent会自动生成一个DaggerViewComponent的方法，modules后面为参数的Module，dependencies后面为注入的依赖。
 ```java
 @Singleton
 @Component(modules = {Test1RepositoryModule.class})
@@ -268,7 +268,7 @@ public interface RepositoryComponent {
     Test1Repository getTest1Repository();
 }
 ```
-- 4、通过DaggerRepositoryComponent的方法注入，@Inject标注的repository1、repository2对象已经实例化了。
+ 4、通过DaggerRepositoryComponent的方法注入，@Inject标注的repository1、repository2对象已经实例化了。
 ```java
 public class Test_DaggerListPresenter{
    
@@ -285,11 +285,13 @@ public class Test_DaggerListPresenter{
     ......
 }
 ```
-具体使用示例：
+
+## 具体使用示例
  - [MVP+Dagger实现一个数据源数据返回](https://github.com/lianghuiyong/AndroidBase/blob/appbase-2.0/app/src/main/java/net/liang/androidbaseapplication/mvp/daggernormal/Test_DaggerNormalActivity.java)
  - [MVP+Dagger使用基类列表页面实现两个数据源数据返回](https://github.com/lianghuiyong/AndroidBase/blob/appbase-2.0/app/src/main/java/net/liang/androidbaseapplication/mvp/daggerlist/Test_DaggerListActivity.java)
 
-参考文章：
+## 参考文章
+
  - [Dagger文章推荐1：使用Dagger2前你必须了解的一些设计原则](http://blog.csdn.net/u010386612/article/details/52225740)
  - [Dagger文章推荐2：使用Dagger 2进行依赖注入](http://codethink.me/2015/08/06/dependency-injection-with-dagger-2/)
  - [Dagger文章推荐3：Google官方MVP+Dagger2架构详解](http://blog.csdn.net/it_yangkun/article/details/52961105)
