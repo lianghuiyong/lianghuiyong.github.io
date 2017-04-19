@@ -8,39 +8,9 @@ tags: [Android]
 
 [compile 'com.better.android:appbase:x.y.z'](https://github.com/lianghuiyong/AndroidBase/)
     
-### Gradle
-
-```gradle
-
-    allprojects {
-        repositories {
-            jcenter()
-            maven { url "https://jitpack.io" }
-        }
-    }
-
-    android {
-        dataBinding {
-            enabled = true
-        }
-    }
-
-    dependencies {
-        compile 'com.better.android:appbase:x.y.z'
-    }
-```
-
-## gradle-wrapper.properties
-
-```gradle
-distributionUrl=https\://services.gradle.org/distributions/gradle-3.3-all.zip
-```
-
 ## MVP使用介绍
 
-<!--more-->
-
-- **V**
+### V
 
 ```java
 public class ExampleV extends BaseAppCompatActivity(or BaseFragment) implements ExampleContract.View{
@@ -58,7 +28,9 @@ public class ExampleV extends BaseAppCompatActivity(or BaseFragment) implements 
 }
 ```
 
-- **P**
+<!--more-->
+
+### P
 
 ```java
 public class ExamplePresenter extends BasePresenter implements ExampleContract.Presenter {
@@ -77,7 +49,7 @@ public class ExamplePresenter extends BasePresenter implements ExampleContract.P
 }
 ```
 
-- **Contract**
+### Contract
 
 ```java
 public interface ExampleContract {
@@ -97,7 +69,7 @@ public interface ExampleContract {
 }
 ```
 
-- **M**
+### M
 
 ```java
 /**
