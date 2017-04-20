@@ -4,6 +4,18 @@ date: 2017-04-18 18:24:48
 tags: [Android]
 ---
 
+## 前言
+
+![MVP](http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png)
+
+MVP：
+
+V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，网络数据、本地缓存数据，这个数据仓库，你应该会喜欢上这个设计。
+
+V-P之间的调用方式采取依赖倒置原则，俗话就是使用抽象接口（回调）；P与V，代码写多了，其实会发现，V可以正常的调用P，P则要尽量少调用V，或者使用DataBinding，数据的变化使用绑定方式；P与M，M只与P做沟通，数据一般来自后台延时操作，这块也就是使用RxJava情况较多的地方，网络请求可以尝试使用ReTrofit。一般情况下，一个V对应一个P，而P和M，会出现一个P对应多个M的情况（M的接口多了，或许会把M按模块创建）。
+
+<!--more-->
+
 ## 使用到的基类库
 
 [compile 'com.better.android:appbase:x.y.z'](https://github.com/lianghuiyong/AndroidBase/)
@@ -27,8 +39,6 @@ public class ExampleV extends BaseAppCompatActivity(or BaseFragment) implements 
     ......
 }
 ```
-
-<!--more-->
 
 ### P
 
