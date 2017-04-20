@@ -19,7 +19,7 @@ Dagger+MVP：
 
 <!--more-->
 
-## 使用到的基类库
+## 我的基类库，欢迎Star
 
 [compile 'com.better.android:appbase:x.y.z'](https://github.com/lianghuiyong/AndroidBase/)
 

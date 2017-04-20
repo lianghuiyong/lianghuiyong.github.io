@@ -16,7 +16,7 @@ V-P之间的调用方式采取依赖倒置原则，俗话就是使用抽象接�
 
 <!--more-->
 
-## 使用到的基类库
+## 我的基类库，欢迎Star
 
 [compile 'com.better.android:appbase:x.y.z'](https://github.com/lianghuiyong/AndroidBase/)
     
