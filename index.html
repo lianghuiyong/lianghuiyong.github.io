@@ -185,6 +185,142 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MVP-Dagger使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/18/MVP-Dagger使用笔记/">MVP+Dagger使用笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/18/MVP-Dagger使用笔记/" class="archive-article-date">
+  	<time datetime="2017-04-18T10:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png" alt="MVP"></p>
+<p>MVP：</p>
+<p>V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，你应该会喜欢上这个设计。</p>
+<p>V-P之间的调用方式采取依赖倒置原则，俗话就是使用抽象接口（回调）；P与V，代码写多了，其实会发现，V可以正常的调用P，P则要尽量少调用V，或者使用DataBinding，数据的变化使用绑定方式；P与M，M只与P做沟通，数据一般来自后台延时操作，这块也就是使用RxJava情况较多的地方，网络请求可以尝试使用ReTrofit。一般情况下，一个V对应一个P，而P和M，会出现一个P对应多个M的情况（M的接口多了，或许会把M按模块创建）。</p>
+<p>Dagger+MVP：</p>
+<p>则是实现在MVP 结构代码中，P、M 的对象创建使用 Dagger 注入方式。</p>
+        
+          <a class="article-more-a" href="/2017/04/18/MVP-Dagger使用笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/18/MVP-Dagger使用笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-MVP使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/18/MVP使用笔记/">MVP使用笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/18/MVP使用笔记/" class="archive-article-date">
+  	<time datetime="2017-04-18T10:24:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png" alt="MVP"></p>
+<p>MVP：</p>
+<p>V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，你应该会喜欢上这个设计。</p>
+<p>V-P之间的调用方式采取依赖倒置原则，俗话就是使用抽象接口（回调）；P与V，代码写多了，其实会发现，V可以正常的调用P，P则要尽量少调用V，或者使用DataBinding，数据的变化使用绑定方式；P与M，M只与P做沟通，数据一般来自后台延时操作，这块也就是使用RxJava情况较多的地方，网络请求可以尝试使用ReTrofit。一般情况下，一个V对应一个P，而P和M，会出现一个P对应多个M的情况（M的接口多了，或许会把M按模块创建）。</p>
+        
+          <a class="article-more-a" href="/2017/04/18/MVP使用笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/18/MVP使用笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-使用Charles抓Https包过程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -582,140 +718,6 @@ GOPATH  :C:\Go\lib
 
 
   
-    <article id="post-Go基础：循环语句" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/Go基础：循环语句/">Go基础：循环语句</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/05/Go基础：循环语句/" class="archive-article-date">
-  	<time datetime="2017-03-05T15:02:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
-</code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
-</code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
-</code></pre>
-        
-          <a class="article-more-a" href="/2017/03/05/Go基础：循环语句/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/Go基础：循环语句/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Go基础：类型、变量、函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/Go基础：类型、变量、函数/">Go基础：类型、变量、函数</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/05/Go基础：类型、变量、函数/" class="archive-article-date">
-  	<time datetime="2017-03-05T13:57:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>go version go1.8 windows/amd64
-</code></pre><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><pre><code>JetBrains Gogland
-</code></pre><h2 id="Go-官方test代码"><a href="#Go-官方test代码" class="headerlink" title="Go 官方test代码"></a>Go 官方test代码</h2><pre><code>$GOPATH$\test
-</code></pre><h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">bool</span></div><div class="line"><span class="keyword">string</span></div><div class="line"><span class="keyword">int</span>  <span class="keyword">int8</span>  <span class="keyword">int16</span>  <span class="keyword">int32</span>  <span class="keyword">int64</span></div><div class="line"><span class="keyword">uint</span> <span class="keyword">uint8</span> <span class="keyword">uint16</span> <span class="keyword">uint32</span> <span class="keyword">uint64</span> <span class="keyword">uintptr</span></div><div class="line"><span class="keyword">byte</span> <span class="comment">// uint8 的别名</span></div><div class="line"><span class="keyword">rune</span> <span class="comment">// int32 的别名, 代表一个Unicode码</span></div><div class="line"><span class="keyword">float32</span> <span class="keyword">float64</span></div><div class="line"><span class="keyword">complex64</span> <span class="keyword">complex128</span></div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/03/05/Go基础：类型、变量、函数/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/Go基础：类型、变量、函数/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -813,14 +815,6 @@ GOPATH  :C:\Go\lib
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
-              </li>
-            
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">服务器开发</a>
-              </li>
-            
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">GitHub Pages</a>
               </li>
             
@@ -830,6 +824,14 @@ GOPATH  :C:\Go\lib
             
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">版本管理</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JCenter</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">服务器开发</a>
               </li>
             
               <li class="article-tag-list-item">

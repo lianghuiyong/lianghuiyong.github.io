@@ -8,17 +8,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lianghuiyong.online">
-  <title>梁惠涌の博客</title>
+  <title>MVP使用笔记 | 梁惠涌の博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="谷歌粉，一只爱折腾的小猿猴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梁惠涌の博客">
-<meta property="og:url" content="http://lianghuiyong.online/page/3/index.html">
+  <meta name="description" content="前言
+MVP：
+V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVP使用笔记">
+<meta property="og:url" content="http://lianghuiyong.online/2017/04/18/MVP使用笔记/index.html">
 <meta property="og:site_name" content="梁惠涌の博客">
-<meta property="og:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta property="og:description" content="前言
+MVP：
+V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，">
+<meta property="og:image" content="http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png">
+<meta property="og:image" content="https://img.shields.io/badge/OsChina%20App-2.8.0-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/RxJava-2.0-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/butterknife-8.5.1-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/todo-MVP-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/todo-DataBinding-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/BaseRecyclerViewAdapterHelper-2.9.0-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/AndroidUtilCode-1.3.5-brightgreen.svg">
+<meta property="og:updated_time" content="2017-04-22T09:38:38.278Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梁惠涌の博客">
-<meta name="twitter:description" content="谷歌粉，一只爱折腾的小猿猴">
+<meta name="twitter:title" content="MVP使用笔记">
+<meta name="twitter:description" content="前言
+MVP：
+V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，">
+<meta name="twitter:image" content="http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png">
   
     <link rel="alternative" href="/atom.xml" title="梁惠涌の博客" type="application/atom+xml">
   
@@ -183,34 +199,82 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-5-0侧栏顶部透明，仿网易云音乐效果。" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-MVP使用笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/">5.0侧栏顶部透明，仿网易云音乐效果。</a>
+    <h1 class="article-title" itemprop="name">
+      MVP使用笔记
     </h1>
   
 
         
-        <a href="/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/" class="archive-article-date">
-  	<time datetime="2016-12-16T02:19:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-16</time>
+        <a href="/2017/04/18/MVP使用笔记/" class="archive-article-date">
+  	<time datetime="2017-04-18T10:24:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-主题"><a href="#一-主题" class="headerlink" title="一. 主题"></a>一. 主题</h2><p>1、基本主题<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"Base.AppTheme"</span> <span class="attr">parent</span>=<span class="string">"Theme.AppCompat.Light.NoActionBar"</span>&gt;</span><span class="xml"></div><div class="line">    <span class="comment">&lt;!--text style--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:textColor"</span>&gt;</span>@color/textColor<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"colorAccent"</span>&gt;</span>@color/colorAccent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowAnimationStyle"</span>&gt;</span>@style/AnimationActivity<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/#more">more >></a>
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="http://oeqej1j2m.bkt.clouddn.com/MVP-Android.png" alt="MVP"></p>
+<p>MVP：</p>
+<p>V层处理UI视图操作；P层实现业务逻辑操作（有设计需要的时候，核心业务甚至可以写到一个核心的P里面去）；M层为数据仓库，后台管理数据来源与数据控制，数据是来自网络、数据库、SP、缓存，示例：你可能会需要这样一个实现，一个数据列表，不需要实时性，但是需要给网络情况有问题时的用户提升用户体验，需要使用网络数据+本地缓存数据机制，那么，都可以统一在这个数据仓库做处理，代码逻辑层次很清晰，你应该会喜欢上这个设计。</p>
+<p>V-P之间的调用方式采取依赖倒置原则，俗话就是使用抽象接口（回调）；P与V，代码写多了，其实会发现，V可以正常的调用P，P则要尽量少调用V，或者使用DataBinding，数据的变化使用绑定方式；P与M，M只与P做沟通，数据一般来自后台延时操作，这块也就是使用RxJava情况较多的地方，网络请求可以尝试使用ReTrofit。一般情况下，一个V对应一个P，而P和M，会出现一个P对应多个M的情况（M的接口多了，或许会把M按模块创建）。</p>
+<a id="more"></a>
+<h2 id="我的基类库，欢迎Star"><a href="#我的基类库，欢迎Star" class="headerlink" title="我的基类库，欢迎Star"></a>我的基类库，欢迎Star</h2><p><a href="https://github.com/lianghuiyong/AndroidBase/" target="_blank" rel="external">compile ‘com.better.android:appbase:x.y.z’</a></p>
+<h2 id="MVP使用介绍"><a href="#MVP使用介绍" class="headerlink" title="MVP使用介绍"></a>MVP使用介绍</h2><h3 id="V"><a href="#V" class="headerlink" title="V"></a>V</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> class ExampleV extends <span class="title">BaseAppCompatActivity</span><span class="params">(or BaseFragment)</span> implements ExampleContract.View</span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getLayoutId</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> R.layout.Example;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> MvpPresenter <span class="title">getPresenter</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    ......</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="P"><a href="#P" class="headerlink" title="P"></a>P</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ExamplePresenter</span> <span class="keyword">extends</span> <span class="title">BasePresenter</span> <span class="keyword">implements</span> <span class="title">ExampleContract</span>.<span class="title">Presenter</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="meta">@NonNull</span></div><div class="line">    <span class="keyword">private</span> ExampleContract.View view;</div><div class="line">    </div><div class="line">    <span class="comment">//你的数据管理仓库</span></div><div class="line">    <span class="meta">@NonNull</span></div><div class="line">    <span class="keyword">private</span> ExampleRepository repository;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ExamplePresenter</span><span class="params">(@NonNull ExampleContract.View view)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.view = checkNotNull(view, <span class="string">"view cannot be null!"</span>);</div><div class="line">        <span class="keyword">this</span>.repository = ExampleRepository.getInstance(RemoteExampleDataSource.getInstance(), LocalExampleDataSource.getInstance());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Contract"><a href="#Contract" class="headerlink" title="Contract"></a>Contract</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ExampleContract</span> </span>&#123;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * view接口层  处理界面</div><div class="line">     */</div><div class="line">    <span class="class"><span class="keyword">interface</span> <span class="title">View</span> <span class="keyword">extends</span> <span class="title">MvpView</span></span>&#123;</div><div class="line">        ......</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">/**</span></div><div class="line">     * Presenter接口层 处理业务</div><div class="line">     */</div><div class="line">    <span class="class"><span class="keyword">interface</span> <span class="title">Presenter</span> <span class="keyword">extends</span> <span class="title">MvpPresenter</span></span>&#123;</div><div class="line">        ......</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="M"><a href="#M" class="headerlink" title="M"></a>M</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 数据管理仓库，控制选择使用remote数据还是local数据（SP、数据库、缓存）</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ExampleRepository</span> <span class="keyword">implements</span> <span class="title">ExampleApi</span> </span>&#123;</div><div class="line">    <span class="meta">@Nullable</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ExampleRepository INSTANCE = <span class="keyword">null</span>;</div><div class="line">    <span class="meta">@NonNull</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">final</span> ExampleApi localDataSource;</div><div class="line">    <span class="meta">@NonNull</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">final</span> ExampleApi remoteDataSource;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ExampleRepository</span><span class="params">(@NonNull ExampleApi localDataSource, @NonNull ExampleApi remoteDataSource)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.localDataSource = checkNotNull(localDataSource);</div><div class="line">        <span class="keyword">this</span>.remoteDataSource = checkNotNull(remoteDataSource);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExampleRepository <span class="title">getINSTANCE</span><span class="params">(@NonNull ExampleApi localDataSource, @NonNull ExampleApi remoteDataSource)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</div><div class="line">            INSTANCE = <span class="keyword">new</span> ExampleRepository(localDataSource, remoteDataSource);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> INSTANCE;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; register(<span class="meta">@Body</span> ExampleRegisterBean sendBean) &#123;</div><div class="line">        <span class="keyword">return</span> remoteDataSource.register(sendBean);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; unregister(<span class="meta">@Body</span> ExampleUnRegisterBean sendBean) &#123;</div><div class="line">        <span class="keyword">return</span> localDataSource.unregister(sendBean);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ExampleApi</span> </span>&#123;</div><div class="line"> </div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 注册</div><div class="line">     * 使用retrofit请求</div><div class="line">     */</div><div class="line">    <span class="meta">@POST</span>(<span class="string">"services/device/register"</span>)</div><div class="line">    Observable&lt;BaseResponseData&lt;String&gt;&gt; register(<span class="meta">@Body</span> RegisterBean sendBean);</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 注销</div><div class="line">     * 使用非retrofit请求</div><div class="line">     */</div><div class="line">    Observable&lt;BaseResponseData&lt;String&gt;&gt; unregister(UnRegisterBean sendBean);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//remote数据实现</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RemoteExampleDataSource</span> <span class="keyword">implements</span> <span class="title">ExampleApi</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> RemoteExampleDataSource INSTANCE;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> RemoteExampleDataSource <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</div><div class="line">            INSTANCE = <span class="keyword">new</span> RemoteExampleDataSource();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> INSTANCE;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; register(<span class="meta">@Body</span> RegisterBean sendBean) &#123;</div><div class="line">        <span class="comment">/**</span></div><div class="line">        * public static ExampleApi getExampleApi() &#123;</div><div class="line">        *     if (ExampleApi == null) &#123;</div><div class="line">        *         Retrofit retrofit = new Retrofit.Builder()</div><div class="line">        *                 .client(new OkHttpClient())</div><div class="line">        *                 .baseUrl(UrlConstants.HOST)</div><div class="line">        *                 .addConverterFactory(GsonConverterFactory.create())</div><div class="line">        *                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())</div><div class="line">        *                 .build();</div><div class="line">        *         ExampleApi = retrofit.create(ExampleApi.class);</div><div class="line">        *     &#125;</div><div class="line">        *     return ExampleApi;</div><div class="line">        * &#125;</div><div class="line">        */</div><div class="line">        <span class="keyword">return</span> NetWork.getExampleApi().register(sendBean);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; unregister(UnRegisterBean sendBean) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LocalExampleDataSource</span> <span class="keyword">implements</span> <span class="title">ExampleApi</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="meta">@Nullable</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> LocalExampleDataSource INSTANCE;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LocalExampleDataSource <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</div><div class="line">            INSTANCE = <span class="keyword">new</span> LocalExampleDataSource();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> INSTANCE;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; register(<span class="meta">@Body</span> RegisterBean sendBean) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="keyword">public</span> Observable&lt;BaseResponseData&lt;String&gt;&gt; unregister(UnRegisterBean sendBean) &#123;</div><div class="line">        ......</div><div class="line">        <span class="keyword">return</span> Observable.just(baseResponseData);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><ul>
+<li><a href="http://git.oschina.net/oschina/android-app" target="_blank" rel="external"><img src="https://img.shields.io/badge/OsChina%20App-2.8.0-brightgreen.svg" alt=""></a></li>
+<li><a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external"><img src="https://img.shields.io/badge/RxJava-2.0-brightgreen.svg" alt=""></a>   </li>
+<li><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external"><img src="https://img.shields.io/badge/butterknife-8.5.1-brightgreen.svg" alt=""></a>   </li>
+<li><a href="https://github.com/googlesamples/android-architecture/tree/todo-mvp/" target="_blank" rel="external"><img src="https://img.shields.io/badge/todo-MVP-brightgreen.svg" alt=""></a> </li>
+<li><a href="https://github.com/googlesamples/android-architecture/tree/todo-databinding/" target="_blank" rel="external"><img src="https://img.shields.io/badge/todo-DataBinding-brightgreen.svg" alt=""></a> </li>
+<li><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper" target="_blank" rel="external"><img src="https://img.shields.io/badge/BaseRecyclerViewAdapterHelper-2.9.0-brightgreen.svg" alt=""></a> </li>
+<li><a href="https://github.com/Blankj/AndroidUtilCode" target="_blank" rel="external"><img src="https://img.shields.io/badge/AndroidUtilCode-1.3.5-brightgreen.svg" alt=""></a> </li>
+</ul>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://oeqej1j2m.bkt.clouddn.com/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://oeqej1j2m.bkt.clouddn.com/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -230,18 +294,83 @@ var _hmt = _hmt || [];
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/16/5-0侧栏顶部透明，仿网易云音乐效果。/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lianghuiyong.online/2017/04/18/MVP使用笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/18/MVP-Dagger使用笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          MVP+Dagger使用笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/03/使用Charles抓Https包过程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用Charles抓Https包过程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -249,145 +378,27 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-CentOS7 网络设置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/05/CentOS7 网络设置/">CentOS7 网络设置</a>
-    </h1>
+    <div class="duoshuo"></div>
   
 
-        
-        <a href="/2016/11/05/CentOS7 网络设置/" class="archive-article-date">
-  	<time datetime="2016-11-05T09:39:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"><a href="#1、使用虚拟机安装CentOS，并使用桥接方式链接网络" class="headerlink" title="1、使用虚拟机安装CentOS，并使用桥接方式链接网络"></a>1、使用虚拟机安装CentOS，并使用桥接方式链接网络</h1><h1 id="2、编辑网络配置"><a href="#2、编辑网络配置" class="headerlink" title="2、编辑网络配置"></a>2、编辑网络配置</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></div><div class="line">vi ifcfg-eno16777736</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/11/05/CentOS7 网络设置/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">服务器开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/11/05/CentOS7 网络设置/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
 
 
 
 
-
-
-
-
-  
-    <article id="post-Git使用笔录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/29/Git使用笔录/">Git使用笔录</a>
-    </h1>
-  
-
-        
-        <a href="/2016/10/29/Git使用笔录/" class="archive-article-date">
-  	<time datetime="2016-10-29T05:09:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="git工具下载：https-git-scm-com-download"><a href="#git工具下载：https-git-scm-com-download" class="headerlink" title="git工具下载：https://git-scm.com/download/"></a>git工具下载：<a href="https://git-scm.com/download/">https://git-scm.com/download/</a></h2><p><strong>配置git信息</strong></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user<span class="selector-class">.name</span> <span class="string">"Your name"</span></div><div class="line">git config --global user<span class="selector-class">.email</span> <span class="string">"Your email"</span></div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/10/29/Git使用笔录/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">版本管理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/10/29/Git使用笔录/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
-  
-
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
           </div>
         </div>
@@ -408,8 +419,8 @@ var _hmt = _hmt || [];
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

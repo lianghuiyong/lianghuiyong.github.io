@@ -1,3 +1,5 @@
+http://lianghuiyong.online/2017/04/18/MVP-Dagger使用笔记/
+http://lianghuiyong.online/2017/04/18/MVP使用笔记/
 http://lianghuiyong.online/2017/04/03/使用Charles抓Https包过程/
 http://lianghuiyong.online/2017/03/31/Android-studio-2-3-Cmake-Jni-环境搭建/
 http://lianghuiyong.online/2017/03/31/echo-服务器开发笔记/
@@ -6,5 +8,3 @@ http://lianghuiyong.online/2017/03/12/echo框架使用：获取与配置/
 http://lianghuiyong.online/2017/03/12/GO基础：复合数据类型/
 http://lianghuiyong.online/2017/03/05/Go基础：循环语句/
 http://lianghuiyong.online/2017/03/05/Go基础：类型、变量、函数/
-http://lianghuiyong.online/2017/03/01/Go环境搭建/
-http://lianghuiyong.online/2017/02/28/自定义按钮ShapeButton/
