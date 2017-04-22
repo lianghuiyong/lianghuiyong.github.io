@@ -1,7 +1,7 @@
 ---
 title: MVP+Dagger使用笔记
 date: 2017-04-18 18:37:36
-tags:
+tags: [Android]
 ---
 ## 前言
 
